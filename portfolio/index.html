@@ -4,13 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadia Farooq — Full-Stack Developer (Django) & Salesforce</title>
+    <title>Sadia Farooq | Full-Stack Web Developer (Python, Django) &amp; Salesforce</title>
     <meta name="description"
-        content="Portfolio of Sadia Farooq, full-stack web developer working with Python, Django, MySQL, JavaScript and Salesforce.">
+        content="Sadia Farooq is a full-stack web developer (Python, Django, PHP, MySQL, JavaScript) and Salesforce developer. See live projects and source code.">
+    <meta name="author" content="Sadia Farooq">
+    <link rel="canonical" href="https://sadiafarooq-dev.github.io/portfolio/">
+
+    <!-- Link preview for LinkedIn, Fiverr, WhatsApp, Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sadia Farooq | Full-Stack Web Developer &amp; Salesforce">
+    <meta property="og:description"
+        content="Django and PHP web apps with live demos, responsive websites and Salesforce CRM projects.">
+    <meta property="og:url" content="https://sadiafarooq-dev.github.io/portfolio/">
+    <meta property="og:image" content="https://sadiafarooq-dev.github.io/portfolio/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://sadiafarooq-dev.github.io/portfolio/images/og-image.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2545'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='white' text-anchor='middle'%3ESF%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,15 +34,17 @@
     <!-- ================= Header ================= -->
     <header class="site-header">
         <div class="wrap nav">
-            <a href="#top" class="brand">Sadia<span>.</span></a>
+            <a href="#top" class="brand"><span class="logo">SF</span>Sadia Farooq</a>
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
             <nav class="nav-links" aria-label="Main">
                 <a href="#projects">Projects</a>
+                <a href="#salesforce">Salesforce</a>
                 <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
                 <a href="#about">About</a>
-                <a href="#contact" class="btn btn-small">Hire me</a>
+                <a href="#contact" class="btn btn-sm">Contact me</a>
             </nav>
         </div>
     </header>
@@ -38,276 +55,238 @@
         <section class="hero">
             <div class="wrap hero-grid">
                 <div class="hero-text">
-                    <p class="eyebrow"><span class="dot"></span> Open to full-time &amp; remote roles</p>
-                    <h1>Hi, I'm Sadia Farooq.<br><span class="grad">I build full-stack web apps.</span></h1>
+                    <p class="badge"><span class="dot"></span>Available for full-time, remote &amp; freelance work</p>
+                    <h1>Sadia Farooq</h1>
+                    <p class="role">Full-Stack Web Developer <span>·</span> Python &amp; Django <span>·</span> Salesforce</p>
                     <p class="lead">
-                        I'm a full-stack developer who works with <strong>Python &amp; Django</strong>, <strong>MySQL</strong>
-                        and <strong>JavaScript</strong>. I've built a multi-vendor marketplace with buyer, seller and admin
-                        roles, and several responsive websites. I also build CRM apps on <strong>Salesforce</strong>.
+                        I build complete web applications, from the database and back-end logic to responsive,
+                        easy-to-use interfaces. My projects include a multi-vendor marketplace in Django and an online
+                        store in PHP &amp; MySQL, both live online, plus CRM solutions on Salesforce.
                     </p>
                     <div class="hero-cta">
-                        <a href="#projects" class="btn">View my work</a>
-                        <a href="mailto:sadiaafarooqfyp@gmail.com" class="btn btn-ghost">Email me</a>
+                        <a href="#projects" class="btn">View my projects</a>
+                        <a href="mailto:sadiafarooq956@gmail.com" class="btn btn-outline">Email me</a>
                     </div>
-                    <ul class="socials" aria-label="Profiles">
-                        <li><a href="https://github.com/sadiafarooq-dev" aria-label="GitHub" target="_blank" rel="noopener">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
-                                </svg>GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/sadia-farooq-16bb31374" aria-label="LinkedIn" target="_blank" rel="noopener">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
-                                </svg>LinkedIn</a></li>
-                        <li><a href="mailto:sadiaafarooqfyp@gmail.com" aria-label="Email">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.3-.5 7.7 6.16L19.7 5H4.3ZM20 6.58l-7.38 5.9a1 1 0 0 1-1.24 0L4 6.58V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V6.58Z" />
-                                </svg>Email</a></li>
+                    <ul class="hero-links" aria-label="Profiles">
+                        <li><a href="https://github.com/sadiafarooq-dev" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                                GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/sadia-farooq-16bb31374" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+                                LinkedIn</a></li>
+                        <li><a href="mailto:sadiafarooq956@gmail.com">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.3-.5 7.7 6.16L19.7 5H4.3ZM20 6.58l-7.38 5.9a1 1 0 0 1-1.24 0L4 6.58V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V6.58Z"/></svg>
+                                sadiafarooq956@gmail.com</a></li>
                     </ul>
                 </div>
 
-                <div class="hero-visual" aria-hidden="true">
-                    <div class="browser">
-                        <div class="browser-bar"><i></i><i></i><i></i><span>sadiafarooq.pythonanywhere.com</span></div>
-                        <img src="images/marketplace.jpg" alt="">
-                    </div>
-                    <div class="stat stat-1"><b>3</b> user roles<br><small>buyer · seller · admin</small></div>
-                    <div class="stat stat-2"><b>8</b> projects</div>
-                </div>
+                <aside class="hero-card" aria-label="Quick facts">
+                    <h2>At a glance</h2>
+                    <dl class="facts">
+                        <div><dt>8</dt><dd>Web projects</dd></div>
+                        <div><dt>2</dt><dd>Live full-stack apps</dd></div>
+                        <div><dt>2</dt><dd>Salesforce CRM apps</dd></div>
+                        <div><dt>3</dt><dd>User roles built<br><small>buyer · seller · admin</small></dd></div>
+                    </dl>
+                    <p class="stack-label">Main stack</p>
+                    <ul class="chips">
+                        <li>Python</li><li>Django</li><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Bootstrap 5</li><li>Salesforce</li>
+                    </ul>
+                </aside>
             </div>
         </section>
 
-        <!-- ================= Featured project ================= -->
+        <!-- ================= Featured projects ================= -->
         <section id="projects" class="section">
             <div class="wrap">
-                <p class="kicker">Featured project</p>
-                <h2>Multi-Vendor E-Commerce Marketplace</h2>
+                <div class="section-title">
+                    <p class="kicker">Featured work</p>
+                    <h2>Full-stack projects (live)</h2>
+                    <p class="sub">Real applications with a database, user accounts and an admin panel. Click <b>Live demo</b> to try them.</p>
+                </div>
 
-                <article class="featured">
+                <!-- Django marketplace -->
+                <article class="feature">
                     <div class="gallery">
-                        <img id="featured-main" class="gallery-main" src="images/marketplace.jpg"
+                        <img class="gallery-main" src="images/marketplace.jpg"
                             alt="Marketplace home page with categories, search and trending products">
-                        <div class="thumbs" role="list">
-                            <button class="thumb active" data-src="images/marketplace.jpg"
-                                data-alt="Marketplace home page" role="listitem"><img src="images/marketplace.jpg"
-                                    alt="Home page"></button>
-                            <button class="thumb" data-src="images/marketplace-cart.jpg" data-alt="Shopping cart"
-                                role="listitem"><img src="images/marketplace-cart.jpg" alt="Cart"></button>
-                            <button class="thumb" data-src="images/marketplace-seller.jpg" data-alt="Seller dashboard"
-                                role="listitem"><img src="images/marketplace-seller.jpg" alt="Seller dashboard"></button>
-                            <button class="thumb" data-src="images/marketplace-admin.jpg" data-alt="Admin dashboard"
-                                role="listitem"><img src="images/marketplace-admin.jpg" alt="Admin dashboard"></button>
+                        <div class="thumbs">
+                            <button class="thumb active" data-src="images/marketplace.jpg" data-alt="Marketplace home page"><img src="images/marketplace.jpg" alt="Home page"></button>
+                            <button class="thumb" data-src="images/marketplace-cart.jpg" data-alt="Shopping cart"><img src="images/marketplace-cart.jpg" alt="Cart"></button>
+                            <button class="thumb" data-src="images/marketplace-seller.jpg" data-alt="Seller dashboard"><img src="images/marketplace-seller.jpg" alt="Seller dashboard"></button>
+                            <button class="thumb" data-src="images/marketplace-admin.jpg" data-alt="Admin dashboard"><img src="images/marketplace-admin.jpg" alt="Admin dashboard"></button>
                         </div>
                     </div>
-
-                    <div class="featured-body">
-                        <p>
-                            A complete online marketplace where <strong>buyers</strong> shop, <strong>sellers</strong> run
-                            their own storefronts after admin approval, and an <strong>admin</strong> monitors the whole
-                            platform from a custom dashboard.
-                        </p>
+                    <div class="feature-body">
+                        <p class="type">Full-stack · Python / Django</p>
+                        <h3>Multi-Vendor E-Commerce Marketplace</h3>
+                        <p>An online marketplace where <strong>buyers</strong> shop, <strong>sellers</strong> run their own
+                            stores after admin approval, and an <strong>admin</strong> manages the whole platform from a
+                            custom dashboard.</p>
                         <ul class="checks">
-                            <li>Custom user model with role-based access (buyer / seller / admin)</li>
-                            <li>Seller approval workflow, product CRUD with image uploads</li>
+                            <li>Role-based accounts: buyer, seller and admin</li>
+                            <li>Seller approval, product management with image uploads</li>
                             <li>AJAX cart &amp; wishlist with live stock checks</li>
-                            <li>Checkout with Cash on Delivery or Razorpay, with payments verified on the server</li>
-                            <li>Order tracking numbers, order status updates and PDF invoices</li>
-                            <li>Live product search with autocomplete</li>
+                            <li>Checkout with Cash on Delivery or Razorpay (verified on the server)</li>
+                            <li>Order tracking and downloadable PDF invoices</li>
                         </ul>
-                        <ul class="tags">
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>MySQL</li>
-                            <li>jQuery / AJAX</li>
-                            <li>Bootstrap 5</li>
-                            <li>Razorpay</li>
-                            <li>WeasyPrint</li>
+                        <ul class="chips">
+                            <li>Python</li><li>Django</li><li>SQLite / MySQL</li><li>jQuery / AJAX</li><li>Bootstrap 5</li><li>Razorpay</li>
                         </ul>
                         <div class="links">
-                            <a href="https://sadiafarooq.pythonanywhere.com" class="btn" target="_blank" rel="noopener">Live demo</a>
-                            <a href="https://github.com/sadiafarooq-dev/django-marketplace" class="btn btn-ghost" target="_blank" rel="noopener">View code on GitHub</a>
+                            <a href="https://sadiafarooq.pythonanywhere.com" class="btn" target="_blank" rel="noopener">Live demo ↗</a>
+                            <a href="https://github.com/sadiafarooq-dev/django-marketplace" class="btn btn-outline" target="_blank" rel="noopener">Source code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PHP Fashion Store -->
+                <article class="feature reverse">
+                    <div class="gallery">
+                        <img class="gallery-main" src="images/fashion.jpg" alt="Fashion store home page with new arrivals banner">
+                    </div>
+                    <div class="feature-body">
+                        <p class="type">Full-stack · PHP / MySQL</p>
+                        <h3>Fashion Store: Online Clothing Shop</h3>
+                        <p>A complete online store with customer accounts, shopping cart, checkout, orders and product
+                            reviews, plus an admin panel to manage products, orders, users and messages.</p>
+                        <ul class="checks">
+                            <li>Customer sign-up and login with hashed passwords</li>
+                            <li>Cart, checkout, order history and reviews</li>
+                            <li>Admin panel for products, orders, users and messages</li>
+                            <li>Protected against SQL injection, with safe image uploads</li>
+                        </ul>
+                        <ul class="chips">
+                            <li>PHP</li><li>MySQL</li><li>Admin panel</li><li>Bootstrap 5</li>
+                        </ul>
+                        <div class="links">
+                            <a href="http://sadia-fashion-store.infinityfreeapp.com" class="btn" target="_blank" rel="noopener">Live demo ↗</a>
+                            <a href="https://github.com/sadiafarooq-dev/sadiafarooq-dev.github.io/tree/main/shopping-Project" class="btn btn-outline" target="_blank" rel="noopener">Source code</a>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- ================= Project grid ================= -->
+        <!-- ================= Front-end projects ================= -->
         <section class="section section-alt">
             <div class="wrap">
                 <div class="section-head">
-                    <div>
+                    <div class="section-title">
                         <p class="kicker">More work</p>
-                        <h2>Websites &amp; front-end projects</h2>
+                        <h2>Responsive websites</h2>
+                        <p class="sub">Front-end projects built from designs, all mobile-friendly and live.</p>
                     </div>
                     <div class="filters" role="group" aria-label="Filter projects">
-                        <button class="chip active" data-filter="all">All</button>
-                        <button class="chip" data-filter="php">PHP &amp; MySQL</button>
-                        <button class="chip" data-filter="bootstrap">Bootstrap</button>
-                        <button class="chip" data-filter="css">HTML &amp; CSS</button>
+                        <button class="chip-btn active" data-filter="all">All</button>
+                        <button class="chip-btn" data-filter="bootstrap">Bootstrap</button>
+                        <button class="chip-btn" data-filter="css">HTML &amp; CSS</button>
                     </div>
                 </div>
 
                 <div class="grid">
-
                     <article class="card" data-cat="bootstrap">
-                        <a class="card-img" href="../HolidayBooking/index.html"><img src="images/holiday.jpg"
-                                alt="Holiday booking website hero with beach photo" loading="lazy"></a>
+                        <a class="card-img" href="https://sadiafarooq-dev.github.io/HolidayBooking/index.html" target="_blank" rel="noopener"><img src="images/holiday.jpg" alt="Holiday booking website" loading="lazy"></a>
                         <div class="card-body">
                             <h3>Holiday Booking</h3>
-                            <p>A travel agency site with a hero carousel, booking bar, destination cards, a testimonials
-                                slider and a contact form.</p>
-                            <ul class="tags">
-                                <li>Bootstrap 5</li>
-                                <li>Carousel</li>
-                                <li>Responsive</li>
-                            </ul>
-                            <a class="more" href="../HolidayBooking/index.html">Live demo →</a>
+                            <p>Travel agency site with a hero carousel, booking bar, destination cards, testimonials and a contact form.</p>
+                            <ul class="chips"><li>Bootstrap 5</li><li>Carousel</li><li>Responsive</li></ul>
+                            <div class="card-links">
+                                <a href="https://sadiafarooq-dev.github.io/HolidayBooking/index.html" target="_blank" rel="noopener">Live demo ↗</a>
+                                <a href="https://github.com/sadiafarooq-dev/sadiafarooq-dev.github.io/tree/main/HolidayBooking" target="_blank" rel="noopener">Code</a>
+                            </div>
                         </div>
                     </article>
 
                     <article class="card" data-cat="bootstrap">
-                        <a class="card-img" href="../GadgetSale/assests/index.html"><img src="images/gadget.jpg"
-                                alt="Compare My Gadget home page with device search" loading="lazy"></a>
+                        <a class="card-img" href="https://sadiafarooq-dev.github.io/GadgetSale/assests/index.html" target="_blank" rel="noopener"><img src="images/gadget.jpg" alt="Compare My Gadget website" loading="lazy"></a>
                         <div class="card-body">
                             <h3>Compare My Gadget</h3>
-                            <p>A multi-page site for comparing and trading in phones: home, product offers with a
-                                comparison table, and a checkout flow.</p>
-                            <ul class="tags">
-                                <li>Bootstrap 5</li>
-                                <li>Multi-page</li>
-                                <li>Forms</li>
-                            </ul>
-                            <a class="more" href="../GadgetSale/assests/index.html">Live demo →</a>
+                            <p>Multi-page site for comparing and trading in phones, with an offers page, comparison table and checkout.</p>
+                            <ul class="chips"><li>Bootstrap 5</li><li>Multi-page</li><li>Forms</li></ul>
+                            <div class="card-links">
+                                <a href="https://sadiafarooq-dev.github.io/GadgetSale/assests/index.html" target="_blank" rel="noopener">Live demo ↗</a>
+                                <a href="https://github.com/sadiafarooq-dev/sadiafarooq-dev.github.io/tree/main/GadgetSale" target="_blank" rel="noopener">Code</a>
+                            </div>
                         </div>
                     </article>
 
                     <article class="card" data-cat="bootstrap">
-                        <a class="card-img" href="../Food Website/index.html"><img src="images/food.jpg"
-                                alt="Organic food store home page" loading="lazy"></a>
+                        <a class="card-img" href="https://sadiafarooq-dev.github.io/Food%20Website/index.html" target="_blank" rel="noopener"><img src="images/food.jpg" alt="Organic food store website" loading="lazy"></a>
                         <div class="card-body">
                             <h3>Organic Food Store</h3>
-                            <p>A grocery storefront with product cards, a newsletter sign-up and a store-location map
-                                page built with Leaflet.</p>
-                            <ul class="tags">
-                                <li>Bootstrap 5</li>
-                                <li>Leaflet map</li>
-                            </ul>
-                            <a class="more" href="../Food Website/index.html">Live demo →</a>
-                        </div>
-                    </article>
-
-                    <article class="card" data-cat="php">
-                        <a class="card-img" href="http://sadia-fashion-store.infinityfreeapp.com" target="_blank" rel="noopener"><img src="images/fashion.jpg"
-                                alt="Fashion store home page with new arrivals banner" loading="lazy"></a>
-                        <div class="card-body">
-                            <h3>Fashion Store — PHP &amp; MySQL</h3>
-                            <p>A full online clothing store: customer sign-up and login, cart, checkout, orders and
-                                reviews, plus an admin panel to manage products, orders, users and messages.
-                                Secured against SQL injection with hashed passwords and safe uploads.</p>
-                            <ul class="tags">
-                                <li>PHP</li>
-                                <li>MySQL</li>
-                                <li>Admin panel</li>
-                                <li>Bootstrap 5</li>
-                            </ul>
+                            <p>Grocery storefront with product cards, a newsletter sign-up and a store-location map built with Leaflet.</p>
+                            <ul class="chips"><li>Bootstrap 5</li><li>Leaflet map</li></ul>
                             <div class="card-links">
-                                <a class="more" href="http://sadia-fashion-store.infinityfreeapp.com" target="_blank" rel="noopener">Live demo →</a>
-                                <a class="more" href="https://github.com/sadiafarooq-dev/sadiafarooq-dev.github.io/tree/main/shopping-Project" target="_blank" rel="noopener">Code →</a>
+                                <a href="https://sadiafarooq-dev.github.io/Food%20Website/index.html" target="_blank" rel="noopener">Live demo ↗</a>
+                                <a href="https://github.com/sadiafarooq-dev/sadiafarooq-dev.github.io/tree/main/Food%20Website" target="_blank" rel="noopener">Code</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="card" data-cat="css">
-                        <a class="card-img" href="../BuisnessGrow/index.html"><img src="images/businessgrow.jpg"
-                                alt="BusinessGrow SaaS landing page" loading="lazy"></a>
+                        <a class="card-img" href="https://sadiafarooq-dev.github.io/BuisnessGrow/index.html" target="_blank" rel="noopener"><img src="images/businessgrow.jpg" alt="BusinessGrow SaaS landing page" loading="lazy"></a>
                         <div class="card-body">
-                            <h3>BusinessGrow — SaaS Landing</h3>
-                            <p>A design converted to code: hero, features, pricing tables, testimonials, FAQ and blog
-                                sections, written in plain HTML &amp; CSS.</p>
-                            <ul class="tags">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>Flexbox</li>
-                            </ul>
-                            <a class="more" href="../BuisnessGrow/index.html">Live demo →</a>
+                            <h3>BusinessGrow: SaaS Landing Page</h3>
+                            <p>A design turned into code: hero, features, pricing tables, testimonials, FAQ and blog sections.</p>
+                            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>Flexbox</li></ul>
+                            <div class="card-links">
+                                <a href="https://sadiafarooq-dev.github.io/BuisnessGrow/index.html" target="_blank" rel="noopener">Live demo ↗</a>
+                                <a href="https://github.com/sadiafarooq-dev/sadiafarooq-dev.github.io/tree/main/BuisnessGrow" target="_blank" rel="noopener">Code</a>
+                            </div>
                         </div>
                     </article>
 
                     <article class="card" data-cat="css">
-                        <a class="card-img" href="../CollabDash/index.html"><img src="images/collabdash.jpg"
-                                alt="CollabDash product landing page" loading="lazy"></a>
+                        <a class="card-img" href="https://sadiafarooq-dev.github.io/CollabDash/index.html" target="_blank" rel="noopener"><img src="images/collabdash.jpg" alt="CollabDash product page" loading="lazy"></a>
                         <div class="card-body">
-                            <h3>CollabDash — Product Page</h3>
-                            <p>A landing page for a collaboration tool, with a feature grid, a comparison table, an
-                                embedded video and a newsletter block.</p>
-                            <ul class="tags">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>Video</li>
-                            </ul>
-                            <a class="more" href="../CollabDash/index.html">Live demo →</a>
+                            <h3>CollabDash: Product Page</h3>
+                            <p>Landing page for a collaboration tool, with a feature grid, comparison table, embedded video and newsletter.</p>
+                            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>Video</li></ul>
+                            <div class="card-links">
+                                <a href="https://sadiafarooq-dev.github.io/CollabDash/index.html" target="_blank" rel="noopener">Live demo ↗</a>
+                                <a href="https://github.com/sadiafarooq-dev/sadiafarooq-dev.github.io/tree/main/CollabDash" target="_blank" rel="noopener">Code</a>
+                            </div>
                         </div>
                     </article>
 
                     <article class="card" data-cat="css">
-                        <a class="card-img" href="../FinancialNeed/index.html"><img src="images/financial.jpg"
-                                alt="FinancialNeed services landing page" loading="lazy"></a>
+                        <a class="card-img" href="https://sadiafarooq-dev.github.io/FinancialNeed/index.html" target="_blank" rel="noopener"><img src="images/financial.jpg" alt="FinancialNeed services website" loading="lazy"></a>
                         <div class="card-body">
-                            <h3>FinancialNeed — Services Site</h3>
-                            <p>A services website with a service-plan cards section, numbered feature tiles,
-                                testimonials and an FAQ.</p>
-                            <ul class="tags">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                            </ul>
-                            <a class="more" href="../FinancialNeed/index.html">Live demo →</a>
+                            <h3>FinancialNeed: Services Website</h3>
+                            <p>Services site with plan cards, numbered feature tiles, testimonials and an FAQ section.</p>
+                            <ul class="chips"><li>HTML5</li><li>CSS3</li></ul>
+                            <div class="card-links">
+                                <a href="https://sadiafarooq-dev.github.io/FinancialNeed/index.html" target="_blank" rel="noopener">Live demo ↗</a>
+                                <a href="https://github.com/sadiafarooq-dev/sadiafarooq-dev.github.io/tree/main/FinancialNeed" target="_blank" rel="noopener">Code</a>
+                            </div>
                         </div>
                     </article>
-
                 </div>
             </div>
         </section>
 
         <!-- ================= Salesforce ================= -->
-        <section class="section">
+        <section id="salesforce" class="section">
             <div class="wrap">
-                <p class="kicker">CRM development</p>
-                <h2>Salesforce projects</h2>
+                <div class="section-title">
+                    <p class="kicker">CRM development</p>
+                    <h2>Salesforce projects</h2>
+                </div>
                 <div class="sf-grid">
                     <article class="sf-card">
-                        <div class="sf-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M6.5 19a4.5 4.5 0 0 1-.7-8.95A6 6 0 0 1 17.4 8.6 4.5 4.5 0 1 1 18 17.6V19H6.5Z" />
-                            </svg>
-                        </div>
+                        <div class="sf-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.5 19a4.5 4.5 0 0 1-.7-8.95A6 6 0 0 1 17.4 8.6 4.5 4.5 0 1 1 18 17.6V19H6.5Z"/></svg></div>
                         <h3>Community Fitness &amp; Wellness Hub CRM</h3>
-                        <p>A CRM for a community fitness centre, built on a Salesforce Developer Edition org. It has
-                            custom objects for <strong>Equipment</strong> and <strong>Expenses</strong>, connected by
-                            lookup relationships, plus picklists and formula fields that calculate costs.</p>
-                        <ul class="tags">
-                            <li>Custom objects</li>
-                            <li>Lookup relationships</li>
-                            <li>Formula fields</li>
-                            <li>Data modelling</li>
-                        </ul>
+                        <p>A CRM for a community fitness centre, built in a Salesforce Developer Edition org, with custom
+                            objects for <strong>Equipment</strong> and <strong>Expenses</strong> linked by lookup
+                            relationships, plus picklists and formula fields that calculate costs.</p>
+                        <ul class="chips"><li>Custom objects</li><li>Lookup relationships</li><li>Formula fields</li><li>Data modelling</li></ul>
                     </article>
                     <article class="sf-card">
-                        <div class="sf-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7Zm12 7H5v10h14V9Z" />
-                            </svg>
-                        </div>
+                        <div class="sf-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7Zm12 7H5v10h14V9Z"/></svg></div>
                         <h3>Campus Events Manager</h3>
-                        <p>A Salesforce app for managing campus events, built as university coursework (CSC315).</p>
-                        <ul class="tags">
-                            <li>Salesforce Platform</li>
-                            <li>App Builder</li>
-                        </ul>
+                        <p>A Salesforce app for planning and tracking campus events, built as university coursework (CSC315).</p>
+                        <ul class="chips"><li>Salesforce Platform</li><li>App Builder</li></ul>
                     </article>
                 </div>
             </div>
@@ -316,63 +295,92 @@
         <!-- ================= Skills ================= -->
         <section id="skills" class="section section-alt">
             <div class="wrap">
-                <p class="kicker">Toolbox</p>
-                <h2>Skills</h2>
+                <div class="section-title">
+                    <p class="kicker">Toolbox</p>
+                    <h2>Technical skills</h2>
+                </div>
                 <div class="skills">
                     <div class="skill-col">
                         <h3>Back-end</h3>
                         <ul>
-                            <li>Python</li>
-                            <li>Django (ORM, auth, custom user model)</li>
+                            <li>Python &amp; Django (ORM, auth, custom user model)</li>
                             <li>PHP &amp; MySQL (sessions, admin panels)</li>
-                            <li>MySQL &amp; relational design</li>
-                            <li>REST-style JSON endpoints</li>
-                            <li>Web security: SQL injection, password hashing, safe uploads</li>
-                            <li>Payment gateway integration</li>
+                            <li>Relational database design &amp; ER diagrams</li>
+                            <li>JSON endpoints for AJAX features</li>
+                            <li>Payment gateway integration (Razorpay)</li>
                             <li>PDF generation</li>
+                            <li>Web security: SQL injection, password hashing, safe uploads</li>
                         </ul>
                     </div>
                     <div class="skill-col">
                         <h3>Front-end</h3>
                         <ul>
                             <li>HTML5 &amp; semantic markup</li>
-                            <li>CSS3, Flexbox, Grid</li>
-                            <li>Responsive design</li>
+                            <li>CSS3, Flexbox &amp; Grid</li>
+                            <li>Responsive, mobile-first design</li>
                             <li>JavaScript &amp; jQuery / AJAX</li>
                             <li>Bootstrap 5</li>
-                            <li>Turning designs into code</li>
+                            <li>Turning website designs into code</li>
                         </ul>
                     </div>
                     <div class="skill-col">
-                        <h3>CRM &amp; tools</h3>
+                        <h3>CRM, tools &amp; deployment</h3>
                         <ul>
-                            <li>Salesforce Platform</li>
-                            <li>Custom objects, fields &amp; relationships</li>
+                            <li>Salesforce: objects, fields, relationships</li>
                             <li>Formula fields &amp; picklists</li>
                             <li>Git &amp; GitHub</li>
-                            <li>VS Code</li>
-                            <li>ER diagrams &amp; database design</li>
+                            <li>Deployment: PythonAnywhere, InfinityFree, GitHub Pages</li>
+                            <li>VS Code, XAMPP, phpMyAdmin</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ================= Services ================= -->
+        <section id="services" class="section">
+            <div class="wrap">
+                <div class="section-title">
+                    <p class="kicker">How I can help</p>
+                    <h2>Services</h2>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <h3>Django web applications</h3>
+                        <p>Custom web apps with user accounts, dashboards, payments and admin panels.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Responsive websites</h3>
+                        <p>Business and landing pages from your design, fast and mobile-friendly.</p>
+                    </div>
+                    <div class="service">
+                        <h3>PHP &amp; MySQL fixes</h3>
+                        <p>Bug fixes, security improvements and new features for existing PHP sites.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Salesforce setup</h3>
+                        <p>Custom objects, fields, relationships and formula fields for your CRM.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ================= About ================= -->
-        <section id="about" class="section">
+        <section id="about" class="section section-alt">
             <div class="wrap about">
-                <div>
+                <div class="section-title">
                     <p class="kicker">About me</p>
                     <h2>From pixel-perfect pages to full-stack apps</h2>
                 </div>
                 <div class="about-text">
-                    <p>I started by turning website designs into HTML &amp; CSS. Then I moved to Bootstrap, multi-page
-                        sites and JavaScript. Now I build complete applications with Django: database design,
-                        authentication, role-based dashboards, payments and PDF invoices.</p>
-                    <p>Alongside web development I build CRM solutions on Salesforce. I enjoy taking a business process,
-                        modelling it as data and turning it into something people can use every day.</p>
+                    <p>I started by turning website designs into clean HTML &amp; CSS, then moved on to Bootstrap,
+                        multi-page sites and JavaScript. Today I build complete applications: database design,
+                        authentication, role-based dashboards, payments and PDF invoices, and I deploy them so people can
+                        use them online.</p>
+                    <p>Alongside web development I build CRM solutions on Salesforce. I enjoy taking a business
+                        process, modelling it as data and turning it into something people can use every day.</p>
                     <p>I'm looking for a role where I can ship real features, learn from a strong team and grow
-                        quickly.</p>
+                        quickly. I'm also open to freelance projects.</p>
                 </div>
             </div>
         </section>
@@ -381,12 +389,11 @@
         <section id="contact" class="section contact">
             <div class="wrap contact-box">
                 <h2>Let's work together</h2>
-                <p>Have a role or a project in mind?</p>
-                <a class="btn btn-light" href="mailto:sadiaafarooqfyp@gmail.com">sadiaafarooqfyp@gmail.com</a>
-                <div class="contact-links">
-                    <a href="https://github.com/sadiafarooq-dev" target="_blank" rel="noopener">GitHub</a>
-                    <span aria-hidden="true">·</span>
-                    <a href="https://www.linkedin.com/in/sadia-farooq-16bb31374" target="_blank" rel="noopener">LinkedIn</a>
+                <p>Have a role or a project in mind? Send me a message.</p>
+                <div class="contact-actions">
+                    <a class="btn btn-light" href="mailto:sadiafarooq956@gmail.com">sadiafarooq956@gmail.com</a>
+                    <a class="btn btn-ghost-light" href="https://www.linkedin.com/in/sadia-farooq-16bb31374" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="btn btn-ghost-light" href="https://github.com/sadiafarooq-dev" target="_blank" rel="noopener">GitHub</a>
                 </div>
             </div>
         </section>
@@ -394,7 +401,7 @@
 
     <footer class="site-footer">
         <div class="wrap">
-            <p>© <span id="year"></span> Sadia Farooq · Built with HTML, CSS &amp; JavaScript</p>
+            <p>© <span id="year"></span> Sadia Farooq · Full-Stack Web Developer</p>
             <a href="#top">Back to top ↑</a>
         </div>
     </footer>

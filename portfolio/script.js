@@ -10,7 +10,7 @@ links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     toggle.setAttribute('aria-expanded', false);
 }));
 
-// Featured project galleries (each gallery switches its own main image)
+// Project galleries (each gallery switches its own main image)
 document.querySelectorAll('.gallery').forEach(gallery => {
     const main = gallery.querySelector('.gallery-main');
     gallery.querySelectorAll('.thumb').forEach(btn => {
@@ -24,9 +24,9 @@ document.querySelectorAll('.gallery').forEach(gallery => {
 });
 
 // Project filters
-document.querySelectorAll('.chip').forEach(chip => {
+document.querySelectorAll('.chip-btn').forEach(chip => {
     chip.addEventListener('click', () => {
-        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.chip-btn').forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
         const f = chip.dataset.filter;
         document.querySelectorAll('.grid .card').forEach(card => {
