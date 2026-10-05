@@ -1,0 +1,780 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding-left: clamp(16px, 3.12vw, 60px);
+    font-size: 20px;
+}
+
+header nav {
+    display: flex;
+    padding-top: 30px;
+}
+
+.h-logo {
+    padding-left: clamp(16px, 8.07vw, 155px);
+    font-size: 22px;
+}
+
+.home {
+    font-size: 20px;
+    margin-left: clamp(16px, 13.02vw, 250px);
+    padding-bottom: 15px;
+    padding-top: 12px;
+    border-bottom: 4px solid mediumspringgreen;
+}
+
+nav button {
+    color: white;
+    background-color: mediumspringgreen;
+    border: 2px solid mediumspringgreen;
+    height: 45px;
+    width: 120px;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.power-buisness {
+    display: flex;
+}
+
+.power-text h1 {
+    font-size: clamp(30px, 2.86vw, 55px);
+    font-weight: 800;
+    width: min(450px, 23.44vw);
+    padding-left: clamp(16px, 4.17vw, 80px);
+    padding-top: clamp(8px, 6.77vw, 130px);
+}
+
+.power-text p {
+    padding-top: 20px;
+    color: gray;
+    font-size: 14px;
+    line-height: 25px;
+    width: min(350px, 18.23vw);
+    padding-left: clamp(16px, 4.17vw, 80px);
+}
+
+.girl-sales img {
+    padding-left: clamp(16px, 18.23vw, 350px);
+    width: min(600px, 31.25vw, 100%);
+    padding-top: clamp(8px, 4.17vw, 80px);
+}
+
+.demo-but {
+    border-radius: 18px;
+    height: 35px;
+    width: 90px;
+    color: mediumspringgreen;
+    background-color: white;
+    border: 2px solid mediumspringgreen;
+}
+
+.start-but {
+    border-radius: 18px;
+    height: 35px;
+    width: 90px;
+    color: white;
+    background-color: mediumspringgreen;
+    border: 2px solid mediumspringgreen;
+}
+
+.start-demo-but {
+    padding-left: clamp(16px, 3.65vw, 70px);
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo-line {
+    text-align: center;
+    color: gray;
+    padding-top: clamp(8px, 4.17vw, 80px);
+}
+
+.logos img {
+    padding-top: clamp(8px, 2.08vw, 40px);
+}
+
+.sec3 {
+    display: flex;
+    padding-bottom: clamp(8px, 2.6vw, 50px);
+    border-bottom: 1px solid grey;
+}
+
+.we-plan-p {
+    width: min(650px, 33.85vw, 100%);
+    color: grey;
+    font-size: 17px;
+    padding-left: clamp(16px, 10.42vw, 200px);
+    padding-top: clamp(8px, 6.77vw, 130px);
+    padding-bottom: 20px;
+}
+
+.we-plan {
+    padding-top: 15px;
+    padding-left: clamp(16px, 4.17vw, 80px);
+    width: min(530px, 27.6vw);
+    font-size: clamp(20px, 1.72vw, 33px);
+}
+
+.intro {
+    padding-left: clamp(16px, 4.17vw, 80px);
+    padding-top: clamp(8px, 4.17vw, 80px);
+}
+
+.sec4 {
+    padding-top: clamp(8px, 4.17vw, 80px);
+}
+
+.reasons-to-choose {
+    display: flex;
+}
+
+.why-choose-us {
+    font-size: 19px;
+    color: gray;
+    padding-left: clamp(16px, 4.17vw, 80px);
+}
+
+.features h4 {
+    padding-left: clamp(16px, 4.17vw, 80px);
+    padding-top: 30px;
+    width: min(400px, 20.83vw);
+    font-size: clamp(20px, 1.82vw, 35px);
+    font-weight: 500;
+}
+
+.features p {
+    width: min(340px, 17.71vw);
+    padding-left: clamp(16px, 4.17vw, 80px);
+    padding-top: 15px;
+    font-size: 17px;
+    color: gray;
+    line-height: 30px;
+}
+
+.reasons-to-choose i {
+    color: rgb(52, 189, 137);
+    background-color: white;
+    font-size: clamp(22px, 2.08vw, 40px);
+    border-radius: 100%;
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    margin-left: clamp(16px, 5.21vw, 100px);
+}
+
+.feature-heading {
+    padding-left: clamp(16px, 4.17vw, 80px);
+    padding-top: clamp(8px, 2.45vw, 47px);
+    width: min(400px, 20.83vw);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.feat-parah {
+    width: min(320px, 16.67vw);
+    padding-left: clamp(16px, 4.17vw, 80px);
+    color: gray;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 12px;
+}
+
+.features2 {
+    display: flex;
+    padding-top: clamp(8px, 5.21vw, 100px);
+}
+
+.features2 i {
+    color: rgb(52, 189, 137);
+    background-color: white;
+    font-size: clamp(22px, 2.08vw, 40px);
+    border-radius: 100%;
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    margin-left: clamp(16px, 5.21vw, 100px);
+}
+
+.sec5 {
+    display: flex;
+    margin-top: clamp(8px, 7.81vw, 150px);
+}
+
+
+.blue-shirt {
+    position: relative;
+}
+
+
+.dots {
+    position: absolute;
+    left: 50px;
+    bottom: -18px;
+    z-index: -1;
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    background-color: orange;
+    padding: 18px;
+    border-top-left-radius: 22px;
+}
+
+.arrow i {
+    font-size: clamp(22px, 2.08vw, 40px);
+}
+
+/* .t-man{
+    position: absolute ;left:20px;
+} */
+
+.t-man img {
+    height: min(700px, 36.46vw);
+    margin-left: clamp(16px, 4.17vw, 80px);
+}
+
+.about {
+    font-size: 18px;
+    color: grey;
+    padding-left: clamp(16px, 2.6vw, 50px);
+    margin-top: clamp(8px, 9.38vw, 180px);
+}
+
+.get-to-know {
+    margin-left: clamp(16px, 2.6vw, 50px);
+    font-size: clamp(24px, 2.34vw, 45px);
+    font-weight: 700;
+    width: min(600px, 31.25vw, 100%);
+}
+
+.get-to-know-text {
+    color: grey;
+    margin-left: clamp(16px, 2.6vw, 50px);
+    font-size: 16px;
+    width: min(690px, 35.94vw, 100%);
+    padding-top: 20px;
+    line-height: 35px;
+}
+
+.if-change-the-world {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: clamp(16px, 2.6vw, 50px);
+    width: min(680px, 35.42vw, 100%);
+}
+
+.ceo img {
+    padding-left: clamp(16px, 2.6vw, 50px);
+    padding-top: 25px;
+}
+
+.ceo-img {
+    display: flex;
+}
+
+.brayan {
+    padding-top: clamp(8px, 2.08vw, 40px);
+    padding-bottom: 0;
+    font-size: 19px;
+}
+
+.ceo-text {
+    padding-left: clamp(16px, 6.25vw, 120px);
+    font-size: 13px;
+    color: gray;
+}
+
+.sec6 {
+    margin-top: clamp(8px, 4.17vw, 80px);
+    background-color: rgb(66, 62, 62);
+    min-height: 650px;
+    color: white;
+    display: flex;
+
+}
+
+.graph img {
+    width: min(650px, 33.85vw, 100%);
+    margin-top: clamp(8px, 4.17vw, 80px);
+    margin-left: clamp(16px, 3.12vw, 60px);
+}
+
+.graph-text h2 {
+    font-size: clamp(27px, 2.6vw, 50px);
+    font-weight: 500;
+    padding-top: clamp(8px, 7.81vw, 150px);
+    padding-left: 30px;
+    width: min(600px, 31.25vw, 100%);
+}
+
+.graph-text p {
+    padding-left: 30px;
+    padding-top: 20px;
+    line-height: 35px;
+    font-size: 18px;
+    width: min(630px, 32.81vw, 100%);
+}
+
+.graph-but button {
+    font-size: 20px;
+    height: 55px;
+    width: min(150px, 7.81vw);
+    border-radius: 30px;
+    background-color: mediumspringgreen;
+    border: 2px solid mediumspringgreen;
+}
+
+.sec7 {
+    background-color: whitesmoke;
+}
+
+.simple-pricing h1 {
+    padding-top: clamp(8px, 4.17vw, 80px);
+    font-size: clamp(27px, 2.6vw, 50px);
+    font-weight: 500;
+    text-align: center;
+}
+
+.simple-pricing p {
+    text-align: center;
+    padding-top: 20px;
+    color: gray;
+    padding-bottom: clamp(8px, 2.6vw, 50px);
+}
+
+.simple-pricing span {
+    color: mediumspringgreen;
+}
+
+.free-trail {
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: white;
+    margin-left: clamp(16px, 4.84vw, 93px);
+    min-height: 420px;
+    width: min(380px, 19.79vw);
+}
+
+.trails-premium {
+    display: flex;
+}
+
+.free-trail h3 {
+    font-size: clamp(20px, 1.56vw, 30px);
+    font-weight: 500;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.free-trail p {
+    color: grey;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.free-trail span {
+    font-size: clamp(20px, 1.56vw, 30px);
+    color: black;
+}
+
+.free-trail ul li {
+    list-style-type: none;
+    text-align: center;
+    line-height: 40px;
+}
+
+.free-trail ul {
+    padding-top: 15px;
+}
+
+.free-trail button {
+    font-size: 20px;
+    height: 55px;
+    width: min(300px, 15.62vw);
+    border-radius: 30px;
+    background-color: mediumspringgreen;
+    border: 2px solid mediumspringgreen;
+    margin-left: 38px;
+    margin-top: 15px;
+}
+
+.sec8 {
+    background-color: whitesmoke;
+    min-height: 700px;
+}
+
+.testimony {
+    font-size: 22px;
+    margin-left: clamp(16px, 4.84vw, 93px);
+    padding-top: clamp(8px, 7.81vw, 150px);
+}
+
+.beloved-customer {
+    font-size: clamp(27px, 2.6vw, 50px);
+    font-weight: 600;
+    margin-left: clamp(16px, 4.84vw, 93px);
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.milton-text {
+    display: flex;
+}
+
+.reviews-here {
+    display: flex;
+}
+
+.review {
+    background-color: white;
+    border: 2 px solid white;
+    border-radius: 20px;
+    margin-left: clamp(16px, 5.99vw, 115px);
+    width: min(600px, 31.25vw, 100%);
+    min-height: 350px;
+}
+
+.review-text {
+    padding-top: clamp(8px, 4.17vw, 80px);
+    padding-left: 25px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.milton-austin {
+    padding-top: clamp(8px, 5.21vw, 100px);
+    padding-left: 25px;
+}
+
+.artin {
+    padding-top: clamp(8px, 5.73vw, 110px);
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.artin-tech {
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 15px;
+    color: gray;
+}
+
+.sec9 {
+    display: flex;
+    margin-top: clamp(8px, 2.6vw, 50px);
+}
+
+.asked-qs h3 {
+    color: gray;
+    padding-top: clamp(8px, 2.6vw, 50px);
+    padding-left: clamp(16px, 4.84vw, 93px);
+    font-size: 16px;
+}
+
+.asked-qs p {
+    padding-top: 35px;
+    padding-left: clamp(16px, 4.84vw, 93px);
+    font-size: 25px;
+}
+
+.having-qs {
+    padding-left: clamp(16px, 4.84vw, 93px);
+    padding-top: 15px;
+    font-size: clamp(25px, 2.45vw, 47px);
+    width: min(400px, 20.83vw);
+}
+
+.qst1 {
+    color: rgb(75, 74, 74);
+    font-size: 19px;
+    height: 42px;
+    width: min(500px, 26.04vw);
+    padding-top: 25px;
+    padding-left: 25px;
+    border: 1px solid rgb(184, 180, 180);
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: clamp(16px, 20.83vw, 400px);
+}
+
+.qst2 {
+    color: rgb(75, 74, 74);
+    font-size: 19px;
+    height: 42px;
+    width: min(500px, 26.04vw);
+    padding-top: 25px;
+    padding-left: 25px;
+    border: 1px solid rgb(184, 180, 180);
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: clamp(16px, 20.83vw, 400px);
+}
+
+.qst3 {
+    color: rgb(75, 74, 74);
+    font-size: 19px;
+    height: 42px;
+    width: min(500px, 26.04vw);
+    padding-top: 25px;
+    padding-left: 25px;
+    border: 1px solid rgb(184, 180, 180);
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: clamp(16px, 20.83vw, 400px);
+}
+
+.qst1 i {
+    font-size: 14px;
+    padding-left: clamp(16px, 18.23vw, 350px);
+}
+
+.qst2 i {
+    font-size: 14px;
+    padding-left: clamp(16px, 7.81vw, 150px);
+}
+
+.qst3 i {
+    font-size: 14px;
+    padding-left: clamp(16px, 13.02vw, 250px);
+}
+
+
+.from-blog {
+    margin-top: clamp(8px, 7.81vw, 150px);
+    font-size: 20px;
+    color: gray;
+    padding-left: clamp(16px, 4.84vw, 93px);
+}
+
+.what-we-read {
+    margin-top: 20px;
+    margin-bottom: clamp(8px, 2.6vw, 50px);
+    font-size: clamp(26px, 2.5vw, 48px);
+    padding-left: clamp(16px, 4.84vw, 93px);
+}
+
+.blogs-img {
+    display: flex;
+}
+
+.blog img {
+    width: min(350px, 18.23vw);
+    border-radius: 10px;
+}
+
+.blog {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: min(350px, 18.23vw);
+    margin-left: clamp(16px, 5.89vw, 113px);
+    margin-top: 25px;
+}
+
+.blog h3 {
+    color: mediumspringgreen;
+    font-size: 19px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.blog-text {
+    font-size: 19px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.sec11 {
+    background-image: linear-gradient(to right, mediumspringgreen, rgb(233, 185, 101), rgb(233, 233, 79));
+    height: 200px;
+    border-radius: 20px;
+    margin: clamp(16px, 2.6vw, 50px);
+}
+
+.ready-to-start {
+    display: flex;
+}
+
+.get-started h1 {
+    font-size: clamp(22px, 2.08vw, 40px);
+    padding-top: clamp(8px, 2.6vw, 50px);
+    margin-left: clamp(16px, 18.23vw, 350px);
+    color: white;
+}
+
+.get-started p {
+    font-size: 16px;
+    padding-top: 15px;
+    margin-left: clamp(16px, 17.81vw, 342px);
+    color: white;
+}
+
+.hundred-demo {
+    padding-left: clamp(16px, 17.71vw, 340px);
+    padding-top: clamp(8px, 2.6vw, 50px);
+}
+
+.hundred-demo p {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 32px;
+    color: white;
+}
+
+.hundred-demo button {
+    color: white;
+    background-color: rgb(16, 214, 138);
+    border: 2px solid rgb(16, 214, 138);
+    width: min(180px, 9.38vw);
+    height: 50px;
+    border-radius: 18px;
+    font-size: clamp(20px, 1.56vw, 30px);
+}
+
+.footer-div {
+    display: flex;
+    padding-bottom: clamp(8px, 4.17vw, 80px);
+    border-bottom: 1px solid grey;
+}
+
+.footer-div ul li {
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 38px;
+    padding-top: 20px;
+    color: gray;
+}
+
+.about-lorem {
+    padding-left: clamp(16px, 4.84vw, 93px);
+    font-size: 20px;
+}
+
+.about-lorem p {
+    width: min(300px, 15.62vw);
+    font-size: 18px;
+    color: grey;
+    line-height: 25px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.company {
+    margin-left: clamp(16px, 5.21vw, 100px);
+    font-size: 20px;
+}
+
+.info {
+    margin-left: clamp(16px, 13.02vw, 250px);
+    font-size: 20px;
+}
+
+.stay-updated {
+    margin-left: clamp(16px, 10.42vw, 200px);
+    font-size: 20px;
+}
+
+.plane {
+    position: relative;
+}
+
+.plane input {
+    margin-top: 25px;
+    width: min(200px, 10.42vw);
+    padding: 16px;
+    /* padding-left: 15px; */
+    /* border: 1px solid grey; */
+    border-radius: 22px;
+    /* font-size: 14px; */
+    color: grey;
+}
+
+.plane i {
+    /* margin-left: 150px; */
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 13px;
+    color: white;
+    background-color: mediumspringgreen;
+}
+
+.plane-icon {
+    position: absolute;
+    right: 10px;
+}
+
+.border-end {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: grey;
+    font-size: 20px;
+}
+
+.border-end ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 25px;
+    padding: 5px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.copyright {
+    margin-left: clamp(16px, 4.84vw, 93px);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.available-at {
+    margin-top: 25px;
+    padding-left: clamp(16px, 51.04vw, 980px);
+}
+
+/* ================= Responsive additions ================= */
+img, video { max-width: 100%; height: auto; }
+body { overflow-x: hidden; }
+
+@media (max-width: 900px) {
+    .power-buisness, .sec3, .reasons-to-choose, .features2, .sec5, .sec6, .trails-premium, .reviews-here, .sec9, .blogs-img, .ready-to-start, .footer-div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .border-end, .ceo-img, .logos, .milton-text, header nav {flex-wrap: wrap; justify-content: center; gap: 12px;}
+    body *:not(i):not(button):not(input):not(svg) { width: auto !important; max-width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+    body *:not(i):not(svg) { min-height: 0 !important; }
+    body *:not(i):not(svg):not(img):not(video):not(input) { height: auto !important; }
+    body { padding: 0 16px !important; }
+    h1 { font-size: 32px !important; }
+    h2 { font-size: 28px !important; }
+    button { width: auto !important; padding: 10px 22px !important; height: auto !important; }
+    img { display: block; margin: 16px auto; }
+}
+.graph { flex: 0 0 auto; }
+.graph-text { flex: 1 1 0; min-width: 0; }
+.trails-premium { justify-content: center; gap: 40px; }
+.trails-premium .free-trail { margin-left: 0; }
+@media (max-width: 900px) {
+    .menu ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 16px; }
+    .trails-premium { gap: 24px; }
+    .free-trail button { width: 80% !important; margin: 15px auto 0 !important; display: block; }
+    .sec6 { padding: 30px 0; }
+    .graph, .graph-text { flex: none; }
+}

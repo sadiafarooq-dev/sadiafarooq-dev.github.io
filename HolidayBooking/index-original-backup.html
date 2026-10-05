@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap-5.2.3/dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- add -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- add -->
+
+    <!-- Inline Styling -->
+
+
+    <style>
+        h2 {
+            color: #333;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            position: relative;
+            margin: 30px 0 60px;
+        }
+
+        h2::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 3px;
+            background: #8fbc54;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+        }
+
+        .col-center {
+            margin: 0 auto;
+            float: none !important;
+        }
+
+        /* .carousel {
+	padding: 0 70px;
+} */
+        .carousel .carousel-item {
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            overflow: hidden;
+            min-height: 290px;
+        }
+
+        .carousel .carousel-item .img-box {
+            width: 135px;
+            height: 135px;
+            margin: 0 auto;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+        }
+
+        .carousel .img-box img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 50%;
+        }
+
+        .carousel .testimonial {
+            padding: 30px 0 10px;
+        }
+
+        .carousel .overview {
+            font-style: italic;
+        }
+
+        .carousel .overview b {
+            text-transform: uppercase;
+            color: #7AA641;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            top: 50%;
+            background: none;
+        }
+
+        .carousel-control-prev i,
+        .carousel-control-next i {
+            font-size: 68px;
+            line-height: 42px;
+            position: absolute;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+        }
+
+        .carousel-indicators {
+            bottom: -40px;
+        }
+
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            width: 12px;
+            height: 12px;
+            margin: 1px 3px;
+            border-radius: 50%;
+            border: none;
+        }
+
+        .carousel-indicators li {
+            background: #999;
+            border-color: transparent;
+            box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-indicators li.active {
+            background: #555;
+            box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .nav-link {
+            color: black;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            border: 1px solid orange;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+        }
+
+        .dropdown-item:hover {
+            color: white;
+            background-color: black;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .log-sign button:hover {
+            color: orange;
+            background-color: black;
+        }
+
+        .Mauritius a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            border: 2px solid rgb(203, 158, 12);
+        }
+
+        .image img {
+            width: 124vh;
+        }
+
+        .beach-book p button:hover {
+            background-color: rgb(18, 176, 239);
+        }
+
+        .beach-book button:hover {
+            background-color: rgb(239, 159, 12);
+        }
+
+        .bg-white {
+            position: relative;
+            bottom: 50px;
+            height: 67vh;
+        }
+
+        .message {
+            width: 500vh;
+            height: 500px;
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4" href="#"> <img src="./images/logo.png" alt="" class="rounded-circle"
+                    style="height: 60px; width: 75px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 ms-5 ps-5 mb-lg-0 ff">
+                    <li class="nav-item">
+                        <a class="nav-link ms-5" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-5" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown ms-5">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Locations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-5" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-5" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class=" log-sign d-flex align-items-center">
+                    <button type="button" class="btn btn-warning me-5 p-2 fw-bold">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-warning me-5 p-2 fw-bold">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/sea-tree.jpg" class="w-100" height="650px">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/sunset.jpeg" class="w-100" height="650px">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/sand land.webp" class="w-100" height="650px">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/umbrella.webp" class="w-100" height="650px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-white fw-bold" style="position: absolute; left: 345px; bottom: 330px; font-size: 70px;">
+                    ENJOY
+                    FREEDOM LAND
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" style=" margin-top: -20px;">
+        <div class="row">
+            <div class="Mauritius text-center d-flex justify-content-evenly fw-bold fs-4 bg-light p-5">
+                <a class="navbar-brand" style="border-bottom: 2px solid rgb(229, 218, 218);" href="#">Mauritius</a>
+                <a class="navbar-brand" style="border-bottom: 2px solid rgb(229, 218, 218);" href="#">24 Sept 2016</a>
+                <a class="navbar-brand" style="border-bottom: 2px solid rgb(229, 218, 218);" href="#">10 Oct 2016</a>
+                <a class="navbar-brand" style="border-bottom: 2px solid rgb(229, 218, 218);" href="#">5 Bedrooms</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 class="text-center d-flex justify-content-evenly fw-bold pt-5 " style="font-size:50px;"> See latest vacation
+            ideas </h1>
+    </div>
+
+    <div class="container d-flex justify-content-evenly pt-4">
+        <div class="" style="width: 20rem; height: 0rem; ">
+            <div class="card">
+                <img src="./images/pic-1.jpg" alt="" height="300px" width="110%">
+                <h5 style=" margin-top: -90px; background-color: white; padding: 25px; width:270px;margin-left: 37px;"
+                    class="text-center justify-content-center fw-bold"> Beachfront Escapes</h5>
+                <h3
+                    style=" margin-top: -67px;  padding: 19px; width:250px;margin-left: 48px; border: 3px solid rgb(175, 173, 173);">
+                </h3>
+            </div>
+        </div>
+
+        <div class="" style="width: 20rem; height: 0rem;">
+            <div class="card">
+                <img src="./images/pic-2.jpg" alt="" height="300px" width="110%">
+                <h5 style=" margin-top: -90px; background-color: white; padding: 25px; width:270px;margin-left: 37px;"
+                    class="text-center justify-content-center fw-bold"> Group Holidays</h5>
+                <h3
+                    style=" margin-top: -67px;  padding: 19px; width:250px;margin-left: 48px; border: 3px solid rgb(175, 173, 173); border-radius: 2px solid red;">
+                </h3>
+            </div>
+        </div>
+
+        <div class="" style="width: 20rem; height: 0rem;">
+            <div class="card">
+                <img src="./images/pic-3.jpg" alt="" height="300px" width="110%">
+                <h5 style=" margin-top: -90px; background-color: white; padding: 25px; width:270px; margin-left: 37px;"
+                    class="text-center justify-content-center fw-bold"> City Breaks</h5>
+                <h3
+                    style=" margin-top: -67px;  padding: 19px; width:250px;margin-left: 48px; border: 3px solid rgb(175, 173, 173);">
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="text-center justify-content-center fw-bold pt-5"
+            style="font-family: 'Times New Roman'; margin-top: 300px; font-size:50px;">
+            Recent holiday locations</h1>
+    </div>
+
+
+    <div class="container pt-5 d-flex justify-content-evenly">
+
+        <div class="mix d-flex">
+            <div class="row">
+                <div class="column">
+                    <img src="./images/room.jpg" alt="" width="390px" height="360px">
+                </div>
+
+            </div>
+
+            <div class="row bg-light" style="height: 360px; width: 350px;">
+                <div class="beach-book">
+                    <div>
+                        <h1 class="fw-bold p-4">Thalie 5</h1>
+                        <p class="px-3 fs-5" style="text-align: left;">Thalie 5 is
+                            located on the
+                            exclusive Rivara estate, which is home to several of Luxury Retreats, the finest villas in
+                            Mauritius.
+                        </p>
+                        <p class=" text-center d-flex justify-content-around text-secondary pt-3"> <i
+                                class="fa-solid fa-bed"></i>5
+                            <i class="fa-solid fa-ship"></i> 3
+                            <i class="fa-solid fa-umbrella-beach" style="margin-right: 2px;"></i> <button type="button"
+                                class="btn btn-info" style="margin-top:-10px;">
+                                Beachfront</button>
+                        </p>
+                        <p style="padding-bottom: 10px;">
+                            <button class="p-3 ms-4 btn btn-warning"
+                                style="border-radius: 50px; align-items: center;">BOOK
+                                NOW</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex">
+            <div class="mix d-flex" style="margin-left: 23px;">
+                <div class="">
+                    <div class="column">
+                        <img src="./images/montage.jpg" alt="" width="390px" height="360px">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row bg-light" style="height: 360px; width: 350px;">
+                <div class="column">
+                    <div class="beach-book">
+                        <h1 class="fw-bold pt-3">Montage Kapalua</h1>
+                        <p class="px-4 pt-4 fs-5" style=" text-align: left;">Located only
+                            a jaunt
+                            from
+                            Kahulul airport, you'll be greated by an easy and scenic drive along the West Maul Mountains
+                            and
+                            crystal.</p>
+                        <p class=" text-center d-flex justify-content-around text-secondary pt-3 mb-4"> <i
+                                class="fa-solid fa-bed"></i>
+                            1
+                            <i class="fa-solid fa-ship"></i> 1
+                            <i class="fa-solid fa-umbrella-beach" style="margin-right: 2px;"></i> <button type="button"
+                                class="btn btn-info" style="margin-top:-10px;">
+                                Beachfront</button>
+                        </p>
+                        <button class="p-3 ms-4 btn btn-warning" style="border-radius: 50px; align-items: center;">BOOK
+                            NOW</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container d-flex pt-5 justify-content-around">
+
+        <div class="mix d-flex" style="margin-right: 18px;">
+            <div class="row">
+                <div class="column">
+                    <img src="./images/del auga.jpg" alt="" width="390px" height="360px">
+                </div>
+
+            </div>
+            <div class="row bg-light" style="height: 360px; width: 350px;">
+                <div class="beach-book">
+                    <div>
+                        <h1 class="fw-bold p-4">Casa Del Agua</h1>
+                        <p class="px-3 fs-5" style="text-align: left;">After a breakfast
+                            catered
+                            to your taste and served at your leisure and relax under the shade of a palm trees.</p>
+                        <p class=" text-center d-flex justify-content-around text-secondary pt-3"> <i
+                                class="fa-solid fa-bed"></i>4
+                            <i class="fa-solid fa-ship"></i> 4
+                            <i class="fa-solid fa-umbrella-beach" style="margin-right: 2px;"></i> <button type="button"
+                                class="btn btn-info" style="margin-top:-10px;">
+                                Beachfront</button>
+                        </p>
+                        <button class="p-3 ms-4 btn btn-warning" style="border-radius: 50px; align-items: center;">BOOK
+                            NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mix d-flex" style="margin-left: 18px;">
+            <div class="row">
+                <div class="column">
+                    <img src="./images/casa jaguar.jpg" alt="" width="390px" height="360px">
+                </div>
+
+            </div>
+            <div class="row bg-light" style="height: 360px; width: 350px;">
+                <div class="beach-book">
+                    <h1 class="fw-bold p-4">Casa Jaguar</h1>
+                    <p class="px-4 fs-5" style="text-align: left;">Sleek and
+                        sophisticated like
+                        the animal for which it has been named is an immaculate luxuary villa.</p>
+                    <p class=" text-center d-flex justify-content-around text-secondary pt-3"> <i
+                            class="fa-solid fa-bed"></i>1
+                        <i class="fa-solid fa-ship"></i> 1
+                        <i class="fa-solid fa-umbrella-beach" style="margin-right: 2px;"></i> <button type="button"
+                            class="btn btn-info" style="margin-top:-10px;">
+                            Beachfront</button>
+                    </p>
+                    <button class="p-3 ms-4 btn btn-warning" style="border-radius: 50px; align-items: center;">BOOK
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="text-center fw-bold mt-5 pt-5" style="font-size: 50px;">Why we are
+            different!</h1>
+    </div>
+
+    <div class="container pt-5 d-flex" id="#experience">
+        <div class="row justify-content-evenly">
+            <div class="col-4" style="background-color:white;">
+                <p class=" fs-1 text-center text-white bg-success mt-3"> <i class="fa-solid fa-layer-group"></i> </p>
+                <h5 class="fw-bold text-center fs-3">Tailor Made Packages</h5>
+                <p class=" pt-3 mb-4" style="text-align: center; font-size: 18px;">When it comes to delivering the best
+                    planned holiday
+                    package to you, we strive to exceed your expectations.For us, it has to be spot-on. We do what we do
+                    in the ideal way possible.</p>
+            </div>
+
+            <div class="col-4" style="background-color:white;">
+                <p class=" fs-1 text-center text-white bg-success mt-3"> <i class="fa-solid fa-calendar-days"></i></p>
+                <h5 class="fw-bold text-center fs-3">Best Experience</h5>
+                <p class=" pt-3 mb-4" style="text-align: center; font-size: 18px;">At Purplerain Holidays, we choose to
+                    put
+                    forth an essence
+                    of our own expertise for better service and frstherd experiences into our services and method of
+                    planning.</p>
+            </div>
+
+            <div class="col-4" style="background-color:white;">
+                <p class="fs-1 text-center text-white bg-success mt-3"><i class="fa-solid fa-gem"></i></p>
+                <h5 class="fw-bold text-center fs-3">Exquisite Service</h5>
+                <p class="pt-3 mb-4" style="text-align: center; font-size: 18px;">From the moment you make the first
+                    call to enquire, our
+                    services are geared up for you. From the time booking to your stay and well after the trip as well,
+                    we will
+                    guide you and be your back. </p>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////// -->
+
+
+
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Testimonials</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="img-box"><img src="/examples/images/clients/1.jpg" alt=""></div>
+                            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+                                tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper
+                                malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non
+                                aliquet.</p>
+                            <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img src="/examples/images/clients/2.jpg" alt=""></div>
+                            <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget
+                                nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis
+                                quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida
+                                odio.</p>
+                            <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
+                            <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id
+                                lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
+                                tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa.
+                                Etiam hendrerit dolor eget rutrum.</p>
+                            <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-2 mt-5 d-flex">
+        <div class="image ps-5">
+            <img src="./images/beach house.jpg" alt="">
+        </div>
+        <div class=" message pe-5 ps-2 pb-5">
+            <div class=" bg-dark text-white p-3">
+                <h4 class="fw-bold text-center fs-1">Send us a Message</h4>
+                <!-- <p class="text-left ps-1 pt-4 pb-4 fs-4" style="border-bottom: 2px solid gainsboro;">Your Name</p> -->
+                <!-- <p class="text-left ps-1 pb-4 fs-4" style="border-bottom: 2px solid gainsboro;">Email</p>
+                <p class="text-left ps-1 pb-4 fs-4" style="border-bottom: 2px solid gainsboro;">Message</p> -->
+                <p class="text-left ps-1 pt-4 fs-4">Your Name:</p>
+                <p class="ms-5"><input type="text" placeholder="Enter your name" style="padding: 10px;"></p>
+                <p class="text-left ps-1 pt-2 fs-4">Email:</p>
+                <p class="ms-5"><input type="text" placeholder="Enter your email" style="padding: 10px;"></p>
+                <p class="text-left ps-1 pt-2 fs-4">Message:</p>
+                <p class="ms-5"><input type="text" placeholder="Your message" style="padding: 10px;"></p>
+                <p class=""><button class=" btn btn-danger fw-bold fs-3"
+                        style=" align-items: center; margin-left: 350px;">Send</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-5">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+
+
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for registration</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Sign In
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white">sadia design.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

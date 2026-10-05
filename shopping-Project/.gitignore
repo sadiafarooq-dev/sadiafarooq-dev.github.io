@@ -1,0 +1,8 @@
+# Local database password - never upload
+config.php
+
+# Raw database dump from XAMPP (contains old test passwords)
+ecommerece.sql
+
+# Backups of the files before the security fixes
+_backup_before_fixes/

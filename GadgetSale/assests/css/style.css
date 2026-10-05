@@ -1,0 +1,508 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+}
+
+
+@media screen and (max-width:991px) {
+
+}
+
+
+@media screen and (max-width:480px) {
+
+}
+
+
+
+
+
+
+
+
+.navbar-nav p:hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+.pill-container {
+    display: flex;
+    height: 50px;
+    border-radius: 25px; 
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 440px;
+    box-shadow: 0px 0px 10px rgba(105, 111, 111, 0.4);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 0 15px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    width: 120px;
+    margin: 7px 7px 7px 0;
+    cursor: pointer;
+}
+
+.article-wrapper {
+    width: 250px;
+    height: 180px;
+    -webkit-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+    border: 4px solid transparent;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .article-wrapper:hover {
+    -webkit-box-shadow: 10px 10px 0 orange;
+    box-shadow: 10px 10px 0 orange;
+    border-color: orange;
+    -webkit-transform: translate(-20px, -20px);
+    -ms-transform: translate(-20px, -20px);
+    transform: translate(-20px, -20px);
+  }
+  
+  .article-wrapper:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  
+  .types {
+    gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: flex-start;
+  }
+  
+  .rounded-lg {
+   /* class tailwind */
+    border-radius: 10px;
+  }
+  
+  .article-wrapper:hover .project-hover {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: orange;
+  }
+  
+  .container-project {
+    width: 100%;
+    height: 170px;
+    background: white;
+  }
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(255, 232, 215);
+}
+
+
+
+ .Btn {
+  position: relative;
+  width: 150px;
+  height: 55px;
+  border-radius: 45px;
+  border: none;
+  background-color: orange;
+  /* background-color: rgb(245, 188, 110); */
+  color: white;
+  box-shadow: 0px 10px 10px rgb(255, 200, 95) inset,
+  0px 5px 10px rgba(5, 5, 5, 0.212),
+  0px -10px 10px rgb(245, 188, 110) inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Btn::before {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(236, 222, 125, 0.678);
+  content: "";
+  filter: blur(1px);
+  top: 7px;
+  border-radius: 50%;
+}
+
+.Btn::after {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.137);
+  content: "";
+  filter: blur(1px);
+  bottom: 7px;
+  border-radius: 50%;
+}
+
+.Btn:hover {
+  animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+.map-1{
+  width: 190px;
+  height: 180px;
+  background: rgb(245, 188, 110);
+  border-radius: 40px 0 40px 0;
+ }
+
+
+.accordion-button::after{
+  background-color: rgb(255, 232, 215);
+  transform: scale(1.5);
+  border-radius: 5px;
+  transition: .5s;
+}                           
+
+/* ---from phone-screen--- */
+.pill {
+  display: flex;
+  height: 50px;
+  border-radius: 25px; 
+  border: 1px solid #ccc;
+  overflow: hidden;
+  /* width: 440px; */
+  box-shadow: 0px 0px 10px rgba(105, 111, 111, 0.4);
+}
+
+.search-iput {
+  flex: 1;
+  border: none;
+  padding: 0 15px;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  width: 100px;
+  margin: 7px 7px 7px 0;
+  cursor: pointer;
+}
+
+
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 20px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: orange;
+  transition: color 0.3s;
+}
+
+
+#log {
+  margin: 1em auto;
+  width: 5em;
+  text-align: center;
+  background: transparent;
+}
+
+
+/* ---email/password---- */
+
+.input__email {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-family: inherit;
+  box-shadow: 0 0 0 1px #f8bfbf;
+  border: none;
+  border-radius: 25px;
+  background-color: #fff5f5;
+  transition: all .3s;
+}
+
+.input__email::placeholder {
+  color: #ce9797;
+  font-size: 14px;
+}
+
+.input__email:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px #ee8c8c;
+  border: none;
+  transition: all .3s;
+}
+
+
+/* ----checkbox---- */
+/* Hide the default checkbox */
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 25px;
+  user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background: white;
+  border-radius: 50px;
+  transition: all 0.7s;
+  --spread: 20px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check input:checked ~ .checkmark {
+  background: white;
+  box-shadow: -10px -10px var(--spread) 0px #e6d262, 0 -10px var(--spread) 0px #e6d262, 10px -10px var(--spread) 0px #e6d262, 10px 0 var(--spread) 0px #e6d262, 10px 10px var(--spread) 0px #e6d262, 0 10px var(--spread) 0px #e6d262, -10px 10px var(--spread) 0px #e6d262;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+  display: block;
+  animation: checkmark 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid #FFD700;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+/* Add animation for checkmark */
+@keyframes checkmark {
+  from {
+    transform: rotate(-45deg) scale(0);
+  }
+
+  to {
+    transform: rotate(45deg) scale(1);
+  }
+}
+
+/* Style the label text */
+.check span {
+  margin-left: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+/* ----contact-details---- */
+
+.input {
+  width: 380px;
+  border-radius: 10px;
+  outline: 2px solid #FEBF00;
+  border: 0;
+  background-color: white;
+  outline-offset: 3px;
+  padding: 8px;
+  transition: 0.25s;
+}
+
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+
+/* table  */
+td,th{
+  text-align: center;
+  padding: 5px 35px;
+}
+
+
+/* ----check-box---- */
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  width: 24px;
+  height: 24px;
+  border: 2px solid orangered;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.custom-checkbox .checkmark::before {
+  content: "\2713";
+  font-size: 16px;
+  color: transparent;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #FEBF00;
+  border-color: orangered;
+  transform: scale(1.1) rotateZ(360deg) rotateY(360deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+  color: white;
+}
+
+.custom-checkbox:hover .checkmark {
+  border-color: #FEBF00;
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.custom-checkbox .checkmark,
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  transition: background-color 1.3s, border-color 1.3s, color 1.3s, transform 0.3s;
+}
+
+/* ================= Responsive additions ================= */
+img { max-width: 100%; height: auto; }
+body { overflow-x: hidden; }
+
+@media (max-width: 991px) {
+    .ms-5, .ms-4 { margin-left: 0 !important; }
+    [style*="margin-left: min("] { margin-left: 0 !important; }
+    .row.p-3 { margin-left: 0; margin-right: 0; }
+    .p-5 { padding: 1.5rem !important; }
+    table { display: block; overflow-x: auto; }
+}
+@media (max-width: 576px) {
+    .pill-container { width: 100%; }
+    .pill-container .search-input { min-width: 0; flex: 1; }
+    .fs-1 { font-size: 1.8rem !important; }
+    .navbar-nav { flex-wrap: wrap; }
+}
+input, select, textarea { max-width: 100%; }
+.card .rounded-pill { font-size: .75rem; padding: .2rem .55rem; }
+.card .d-flex { flex-wrap: wrap; gap: 4px; }
+@media (max-width: 1199px) {
+    .row.p-3[style*="position: absolute"] { position: static !important; display: inline-block; margin: 16px 0; }
+}
+@media (max-width: 991px) {
+    .first-name, .acc-no { width: 100% !important; max-width: 100%; }
+    .first-name input, .acc-no input { width: 100% !important; }
+    .pill { width: 100%; }
+}
+@media (max-width: 576px) {
+    .ms-3 { margin-left: 0 !important; }
+    .ps-5 { padding-left: 0 !important; }
+    .p-5 { padding: 1rem !important; }
+    .search-btn { white-space: nowrap; }
+}
+@media (max-width: 991px) {
+    .d-flex:not(nav .d-flex) { flex-wrap: wrap; }
+    .acc-no, .first-name { flex: 1 1 100%; }
+}
+@media (max-width: 1199px) {
+    img[style*="margin-left"] { margin-left: 0 !important; }
+}

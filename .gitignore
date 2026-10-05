@@ -1,0 +1,16 @@
+# The Django project is published as its own repository (django-marketplace)
+FinalVersion/
+
+# Duplicate copy of the shopping project
+shopping-Project/shopping/
+
+# Editor / OS files
+.vscode/
+Thumbs.db
+desktop.ini
+*.pyc
+__pycache__/
+
+# Not part of the portfolio
+MiniCalculator/
+SolarSystem/

@@ -1,0 +1,7 @@
+# Never serve config files or database dumps to visitors
+<FilesMatch "^(config\.php|config\.example\.php|.*\.sql)$">
+    Require all denied
+</FilesMatch>
+
+# Backups made before the security fixes - not part of the website
+RedirectMatch 404 ^/?(.*/)?_backup_before_fixes/

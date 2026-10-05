@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+
+    <!-- One version of each library only (mixing Bootstrap 4 + 5 caused conflicting margins/paddings) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .section-title {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin: 80px 0 40px;
+        }
+
+        /* ---------- Navbar ---------- */
+        .nav-link {
+            color: black;
+            font-size: 22px;
+            font-weight: 600;
+            border: 1px solid transparent;   /* reserve space so hover doesn't shift layout */
+            border-radius: 10px;
+            padding: 6px 14px !important;
+        }
+
+        .nav-link:hover {
+            border-color: orange;
+            color: white;
+            background-color: black;
+        }
+
+        .dropdown-item:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .log-sign button:hover {
+            color: orange;
+            background-color: black;
+        }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            position: relative;
+        }
+
+        .hero img {
+            height: 650px;
+            object-fit: cover;
+        }
+
+        .hero-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            margin: 0;
+            color: white;
+            font-weight: bold;
+            font-size: 70px;
+            text-align: center;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+            width: 90%;
+        }
+
+        /* ---------- Search bar ---------- */
+        .Mauritius {
+            position: relative;
+            z-index: 3;
+            margin-top: -40px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .Mauritius a {
+            color: #222;
+            text-decoration: none;
+            border-bottom: 2px solid rgb(229, 218, 218);
+            padding: 4px 10px;
+        }
+
+        .Mauritius a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            border: 2px solid rgb(203, 158, 12);
+        }
+
+        /* ---------- Vacation idea cards ---------- */
+        .idea-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .idea-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .idea-label {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            width: 78%;
+            background: white;
+            padding: 10px;
+        }
+
+        .idea-label h5 {
+            margin: 0;
+            padding: 14px 10px;
+            border: 3px solid rgb(175, 173, 173);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* ---------- Recent locations ---------- */
+        .location-card {
+            height: 100%;
+        }
+
+        .location-card img {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .beach-book {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+        }
+
+        .beach-book .icons {
+            margin-top: auto;
+        }
+
+        .beach-book .book-btn {
+            border-radius: 50px;
+            align-self: flex-start;
+        }
+
+        .beach-book .book-btn:hover {
+            background-color: rgb(239, 159, 12);
+        }
+
+        .beach-book .icons .btn:hover {
+            background-color: rgb(18, 176, 239);
+        }
+
+        /* ---------- Testimonials (scoped so they don't affect the hero carousel) ---------- */
+        h2 {
+            color: #333;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            margin: 30px 0 60px;
+        }
+
+        h2::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 3px;
+            background: #8fbc54;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+        }
+
+        #myCarousel .carousel-item {
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            overflow: hidden;
+            min-height: 290px;
+        }
+
+        #myCarousel .img-box {
+            width: 135px;
+            height: 135px;
+            margin: 0 auto;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+        }
+
+        #myCarousel .img-box img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 50%;
+        }
+
+        #myCarousel .testimonial {
+            padding: 30px 0 10px;
+        }
+
+        #myCarousel .overview {
+            font-style: italic;
+        }
+
+        #myCarousel .overview b {
+            text-transform: uppercase;
+            color: #7AA641;
+        }
+
+        #myCarousel .carousel-control-prev,
+        #myCarousel .carousel-control-next {
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            top: 50%;
+            background: none;
+            opacity: 1;
+        }
+
+        #myCarousel .carousel-control-prev i,
+        #myCarousel .carousel-control-next i {
+            font-size: 50px;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+        }
+
+        #myCarousel .carousel-indicators {
+            bottom: -40px;
+        }
+
+        #myCarousel .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            margin: 1px 3px;
+            border-radius: 50%;
+            border: none;
+            background: #999;
+            box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+            opacity: 1;
+        }
+
+        #myCarousel .carousel-indicators button.active {
+            background: #555;
+        }
+
+        /* ---------- Contact ---------- */
+        .contact-img {
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 40px; }
+            .section-title { font-size: 34px; margin: 50px 0 30px; }
+            .hero img { height: 420px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= Navbar ================= -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="logo" class="rounded-circle" style="height: 60px; width: 75px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown mx-lg-2">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Locations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="log-sign d-flex align-items-center gap-3">
+                    <button type="button" class="btn btn-warning px-3 py-2 fw-bold">Login</button>
+                    <button type="button" class="btn btn-warning px-3 py-2 fw-bold">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= Hero ================= -->
+    <div id="carouselExampleControls" class="carousel slide hero" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/sea-tree.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/sunset.jpeg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/sand land.webp" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/umbrella.webp" class="d-block w-100" alt="">
+            </div>
+        </div>
+
+        <h1 class="hero-title">ENJOY FREEDOM LAND</h1>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- ================= Search bar ================= -->
+    <div class="container">
+        <div class="Mauritius bg-light p-4 p-md-5 d-flex flex-wrap justify-content-evenly gap-3 fw-bold fs-4">
+            <a href="#">Mauritius</a>
+            <a href="#">24 Sept 2016</a>
+            <a href="#">10 Oct 2016</a>
+            <a href="#">5 Bedrooms</a>
+        </div>
+    </div>
+
+    <!-- ================= Vacation ideas ================= -->
+    <div class="container">
+        <h1 class="section-title">See latest vacation ideas</h1>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="idea-card">
+                    <img src="./images/pic-1.jpg" alt="Beachfront Escapes">
+                    <div class="idea-label">
+                        <h5>Beachfront Escapes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="idea-card">
+                    <img src="./images/pic-2.jpg" alt="Group Holidays">
+                    <div class="idea-label">
+                        <h5>Group Holidays</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="idea-card">
+                    <img src="./images/pic-3.jpg" alt="City Breaks">
+                    <div class="idea-label">
+                        <h5>City Breaks</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Recent locations ================= -->
+    <div class="container">
+        <h1 class="section-title">Recent holiday locations</h1>
+
+        <div class="row g-4">
+            <!-- Thalie 5 -->
+            <div class="col-lg-6">
+                <div class="row g-0 location-card bg-light">
+                    <div class="col-sm-6"><img src="./images/room.jpg" alt="Thalie 5"></div>
+                    <div class="col-sm-6">
+                        <div class="beach-book">
+                            <h1 class="fw-bold">Thalie 5</h1>
+                            <p class="fs-5">Thalie 5 is located on the exclusive Rivara estate, which is home to
+                                several of Luxury Retreats, the finest villas in Mauritius.</p>
+                            <p class="icons d-flex justify-content-around align-items-center text-secondary">
+                                <span><i class="fa-solid fa-bed"></i> 5</span>
+                                <span><i class="fa-solid fa-ship"></i> 3</span>
+                                <span><i class="fa-solid fa-umbrella-beach"></i></span>
+                                <button type="button" class="btn btn-info">Beachfront</button>
+                            </p>
+                            <button class="book-btn px-4 py-3 btn btn-warning">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Montage Kapalua -->
+            <div class="col-lg-6">
+                <div class="row g-0 location-card bg-light">
+                    <div class="col-sm-6"><img src="./images/montage.jpg" alt="Montage Kapalua"></div>
+                    <div class="col-sm-6">
+                        <div class="beach-book">
+                            <h1 class="fw-bold">Montage Kapalua</h1>
+                            <p class="fs-5">Located only a jaunt from Kahulul airport, you'll be greated by an easy
+                                and scenic drive along the West Maul Mountains and crystal.</p>
+                            <p class="icons d-flex justify-content-around align-items-center text-secondary">
+                                <span><i class="fa-solid fa-bed"></i> 1</span>
+                                <span><i class="fa-solid fa-ship"></i> 1</span>
+                                <span><i class="fa-solid fa-umbrella-beach"></i></span>
+                                <button type="button" class="btn btn-info">Beachfront</button>
+                            </p>
+                            <button class="book-btn px-4 py-3 btn btn-warning">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casa Del Agua -->
+            <div class="col-lg-6">
+                <div class="row g-0 location-card bg-light">
+                    <div class="col-sm-6"><img src="./images/del auga.jpg" alt="Casa Del Agua"></div>
+                    <div class="col-sm-6">
+                        <div class="beach-book">
+                            <h1 class="fw-bold">Casa Del Agua</h1>
+                            <p class="fs-5">After a breakfast catered to your taste and served at your leisure and
+                                relax under the shade of a palm trees.</p>
+                            <p class="icons d-flex justify-content-around align-items-center text-secondary">
+                                <span><i class="fa-solid fa-bed"></i> 4</span>
+                                <span><i class="fa-solid fa-ship"></i> 4</span>
+                                <span><i class="fa-solid fa-umbrella-beach"></i></span>
+                                <button type="button" class="btn btn-info">Beachfront</button>
+                            </p>
+                            <button class="book-btn px-4 py-3 btn btn-warning">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casa Jaguar -->
+            <div class="col-lg-6">
+                <div class="row g-0 location-card bg-light">
+                    <div class="col-sm-6"><img src="./images/casa jaguar.jpg" alt="Casa Jaguar"></div>
+                    <div class="col-sm-6">
+                        <div class="beach-book">
+                            <h1 class="fw-bold">Casa Jaguar</h1>
+                            <p class="fs-5">Sleek and sophisticated like the animal for which it has been named is an
+                                immaculate luxuary villa.</p>
+                            <p class="icons d-flex justify-content-around align-items-center text-secondary">
+                                <span><i class="fa-solid fa-bed"></i> 1</span>
+                                <span><i class="fa-solid fa-ship"></i> 1</span>
+                                <span><i class="fa-solid fa-umbrella-beach"></i></span>
+                                <button type="button" class="btn btn-info">Beachfront</button>
+                            </p>
+                            <button class="book-btn px-4 py-3 btn btn-warning">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Why we are different ================= -->
+    <div class="container" id="experience">
+        <h1 class="section-title">Why we are different!</h1>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <p class="fs-1 text-center text-white bg-success py-2"><i class="fa-solid fa-layer-group"></i></p>
+                <h5 class="fw-bold text-center fs-3">Tailor Made Packages</h5>
+                <p class="pt-3 text-center" style="font-size: 18px;">When it comes to delivering the best planned
+                    holiday package to you, we strive to exceed your expectations.For us, it has to be spot-on. We do
+                    what we do in the ideal way possible.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p class="fs-1 text-center text-white bg-success py-2"><i class="fa-solid fa-calendar-days"></i></p>
+                <h5 class="fw-bold text-center fs-3">Best Experience</h5>
+                <p class="pt-3 text-center" style="font-size: 18px;">At Purplerain Holidays, we choose to put forth an
+                    essence of our own expertise for better service and frstherd experiences into our services and
+                    method of planning.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p class="fs-1 text-center text-white bg-success py-2"><i class="fa-solid fa-gem"></i></p>
+                <h5 class="fw-bold text-center fs-3">Exquisite Service</h5>
+                <p class="pt-3 text-center" style="font-size: 18px;">From the moment you make the first call to
+                    enquire, our services are geared up for you. From the time booking to your stay and well after the
+                    trip as well, we will guide you and be your back.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Testimonials ================= -->
+    <div class="container-xl mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Testimonials</h2>
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="img-box"><img src="/examples/images/clients/1.jpg" alt=""></div>
+                            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+                                tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper
+                                malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non
+                                aliquet.</p>
+                            <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img src="/examples/images/clients/2.jpg" alt=""></div>
+                            <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget
+                                nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis
+                                quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida
+                                odio.</p>
+                            <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
+                            <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id
+                                lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
+                                tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa.
+                                Etiam hendrerit dolor eget rutrum.</p>
+                            <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Contact ================= -->
+    <div class="container mt-5 pt-5" id="contact">
+        <div class="row g-0">
+            <div class="col-lg-7">
+                <img src="./images/beach house.jpg" alt="Beach house" class="contact-img">
+            </div>
+            <div class="col-lg-5">
+                <div class="bg-dark text-white p-4 h-100">
+                    <h4 class="fw-bold text-center fs-1 mb-4">Send us a Message</h4>
+                    <label class="fs-4 mb-2" for="name">Your Name:</label>
+                    <input id="name" type="text" class="form-control mb-3 p-2" placeholder="Enter your name">
+                    <label class="fs-4 mb-2" for="email">Email:</label>
+                    <input id="email" type="email" class="form-control mb-3 p-2" placeholder="Enter your email">
+                    <label class="fs-4 mb-2" for="msg">Message:</label>
+                    <textarea id="msg" class="form-control mb-4 p-2" rows="4" placeholder="Your message"></textarea>
+                    <div class="text-center">
+                        <button class="btn btn-danger fw-bold fs-3 px-5">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Footer ================= -->
+    <footer class="bg-dark text-center text-white mt-5">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+
+            <section>
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2"><strong>Sign up for registration</strong></p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-light mb-4">Sign In</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+
+            <section>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-white">Link 1</a></li>
+                            <li><a href="#!" class="text-white">Link 2</a></li>
+                            <li><a href="#!" class="text-white">Link 3</a></li>
+                            <li><a href="#!" class="text-white">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-white">Link 1</a></li>
+                            <li><a href="#!" class="text-white">Link 2</a></li>
+                            <li><a href="#!" class="text-white">Link 3</a></li>
+                            <li><a href="#!" class="text-white">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-white">Link 1</a></li>
+                            <li><a href="#!" class="text-white">Link 2</a></li>
+                            <li><a href="#!" class="text-white">Link 3</a></li>
+                            <li><a href="#!" class="text-white">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-white">Link 1</a></li>
+                            <li><a href="#!" class="text-white">Link 2</a></li>
+                            <li><a href="#!" class="text-white">Link 3</a></li>
+                            <li><a href="#!" class="text-white">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white">sadia design.com</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

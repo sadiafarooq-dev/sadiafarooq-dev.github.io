@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare My Gadget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- ----navbar---- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p class="fs-5 fw-bold text-dark">Compare <span class="text-warning fs-5">My Gadget</span>
+                            </p>
+                        </a>
+                    </li>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" style="margin-left: min(210px, 14.58vw);">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="fs-5 fw-bold ">Home</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 40px;">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="fs-5 fw-bold">Best Price Guarantee</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 40px;">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="fs-5 fw-bold">Support</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 40px;">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="fs-5 fw-bold">Sell My Device</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 40px;">
+                            <a class="nav-link" href="#">
+                                <button type="button" class="btn btn-primary rounded-pill">View Other Gadgets</button>
+                                <p class="fs-5 fw-bold text-dark"></p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container" style="padding: 80px 140px 10px 140px;">
+        <div class="row p-3"
+            style="position: absolute; top: 110px; left: 750px; background-color: orange; border-radius: 10px; border-bottom-left-radius: 80px 100px; ">
+            <h1>Recommended offer</h1>
+        </div>
+        <div class="row p-5" style="background-color: rgb(255, 232, 215); border-radius: 25px;">
+            <div class="col-lg-4 col-md-3">
+                <img src="./images/phone-imgs.avif" alt="" width="255px" class="rounded">
+            </div>
+
+            <div class="col-lg-4">
+                <h2 class="fw-bold">iPhone 14 Pro</h2>
+                <h5 class="text-secondary mt-4 ms-4">Capacity: <span class="text-dark">64 GB</span></h5>
+                <h5 class="text-secondary ms-4">Network: <span class="text-dark">Unlocked</span></h5>
+                <h5 class="text-secondary ms-4">Condition: <span class="text-dark">Working</span></h5>
+                <h5 class="text-secondary ms-4">Your Offer: <span class="fw-bold text-dark">£100</span></h5>
+            </div>
+            <div class="col-lg-4 col-md-4 ">
+                <div class="mt-3 rounded">
+                    <img src="./images/deer.png" alt="" width="280px" height="100px">
+                </div>
+                <div class="rating" style="margin-left: min(130px, 9.03vw);">
+                    <input value="5" name="rating" id="star5" type="radio" class="bg-success">
+                    <label for="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio">
+                    <label for="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio">
+                    <label for="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio">
+                    <label for="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio">
+                    <label for="star1"></label>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ---enter details--- -->
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Enter your details to cell your device!</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----email/password--- -->
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-lg-7 pb-2 ms-5" style="background-color: rgb(255, 232, 215); border-radius: 15px;">
+                <h4 class="mt-5 ms-5 fw-bold">Your Email Address</h4>
+                <input type="email" id="email-id" name="email-id" class="input__email" placeholder="Email Address"
+                    required="">
+                <h4 class="ms-5 mt-4 fw-bold">Create Your Password</h4>
+                <input type="password" id="password-id" name="password" class="input__email" placeholder="Password"
+                    required="">
+
+                <div class="permission d-flex">
+                    <label class="check mt-5 ms-4">
+                        <input type="checkbox" checked="checked">
+                        <div class="checkmark"></div>
+                    </label>
+                    <p class="mt-5 ms-4" style="font-size: smaller;">Yes i'd also like to receive emails about products
+                        from you.</p>
+                </div>
+
+                <p class="ms-5" style="font-size: smaller;">You can unsubscribe at any time. SellMyMobile.com will
+                    process your data in accordance with
+                    it's <a href="#" class="text-dark">privacy policy</a>.</p>
+                <div class="account-but p-2 mt-3" style="margin-left: min(400px, 27.78vw);">
+                    <button type="button" class="btn p-2 fs-6 fw-bold"
+                        style="background-color: orange; margin-left: min(200px, 13.89vw);">Create an account</button>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-4 ms-4" style="background-color: rgb(255, 232, 215); border-radius: 15px;">
+                <h4 class="fw-bold p-3 mt-4">Review your order!</h4>
+                <p class="fw-bold ms-4 mt-2">Apple iphone 14 Pro Max</p>
+
+                <div class="oder d-flex">
+                    <div class="imag mt-5">
+                        <img src="./images/phone-imgs.avif" alt="" width="255px" class="rounded">
+                    </div>
+                    <div class="d-down p-5">
+                        <div class="dropdown mb-4" style="border-radius: 20px;">
+                            <button class="btn btn-light btn-outline-warning dropdown-toggle rounded-pill" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                style="width: 110px;">
+                                Capacity
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Action</a></li>
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Another action</a></li>
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown mb-4" style="border-radius: 20px;">
+                            <button class="btn btn-light btn-outline-warning dropdown-toggle rounded-pill" type="button"
+                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"
+                                style="width: 110px;">
+                                Network
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Action</a></li>
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Another action</a></li>
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown mb-4" style="border-radius: 20px;">
+                            <button class="btn btn-light btn-outline-warning dropdown-toggle rounded-pill" type="button"
+                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false"
+                                style="width: 110px;">
+                                Condition
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Action</a></li>
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Another action</a></li>
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-lg-7 ms-5"
+                style="background-color: rgb(255, 232, 215); border-radius: 15px; height: 598px;">
+
+                <div class="contact-details">
+                    <h3 class="fw-bold mt-4 ms-4">Your Contact Details</h3>
+
+                    <div class="name d-flex">
+                        <div class="first-name">
+                            <h4 class="ms-5 mt-4">First Name</h4>
+                            <input type="text" placeholder="First Name" name="text" class="input ms-5 mt-3"
+                                width="500px">
+                        </div>
+
+                        <div class="first-name">
+                            <h4 class="ms-5 mt-4">Last Name</h4>
+                            <input type="text" placeholder="Last Name" name="text" class="input ms-5 mt-3"
+                                width="500px">
+                        </div>
+                    </div>
+                    <div class="addr-mail d-flex">
+                        <div class="first-name">
+                            <h4 class="ms-5 mt-5">Your Address</h4>
+                            <input type="text" placeholder="city,st.." name="text" class="input ms-5 mt-3">
+                        </div>
+
+                        <div class="first-name">
+                            <h4 class="ms-5 mt-5">Your Email</h4>
+                            <input type="text" placeholder="user@gmail.com" name="text" class="input ms-5 mt-3">
+                        </div>
+
+                    </div>
+                    <div class="code-cont d-flex">
+                        <div class="first-name">
+                            <h4 class="ms-5 mt-5">Postcode</h4>
+                            <input type="text" placeholder="e.g;123" name="text" class="input ms-5 mt-3">
+                        </div>
+
+                        <div class="first-name">
+                            <h4 class="ms-5 mt-5">Contact Number</h4>
+                            <input type="text" placeholder="Phone No." name="text" class="input ms-5 mt-3">
+                        </div>
+                    </div>
+                    <div class="add-dtls mt-5">
+                        <button type="button" class="btn p-2 fs-6 fw-bold"
+                            style="background-color: orange; margin-left: min(650px, 45.14vw);">Add Details</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="col-lg-4 ms-4 px-3" style="background-color: rgb(255, 232, 215);   border-radius: 15px;">
+                <!-- ----protect--- -->
+                <div class="secured">
+                    <div class="logo mt-2" style="margin-left: 90px;">
+                        <img src="./images/protect-lock.png" alt="" height="250px">
+                    </div>
+                </div>
+                <div class="secured-text px-5 pb-5" style="border-bottom: 7px solid #4da8d6; border-radius: 5px;">
+                    <p class="" style="font-size: 15px">You can unsubscribe at any time. SellMyMobile.com will
+                        process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+                </div>
+                <!-- ----price locked--- -->
+                <div class="secured d-flex mt-3">
+                    <div class="logo mt-5">
+                        <i class="fa-solid fa-lock" style="color: orange; font-size: 100px;margin-left: min(150px, 10.42vw);"></i>
+                    </div>
+                    <div class="logo-text" style="color: orange;">
+                        <h3 class="mt-5 ms-3 fw-bold display-6">Price</h3>
+                        <h3 class="fs-4 ms-3 fw-bold">Locked <span class="fs-6">in 14 days</span></h5>
+                    </div>
+                </div>
+                <div class="secured-text px-5 mt-5 pb-5" style="border-bottom: 7px solid orange; border-radius: 5px;">
+                    <p class="" style="font-size: 15px;">You can unsubscribe at any time. SellMyMobile.com will
+                        process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+                </div>
+
+                <!-- ----return fee--- -->
+                <div class="secured d-flex mt-3">
+                    <div class="logo mt-5">
+                        <img src="./images/exchange.png" alt="" style="margin-left: min(135px, 9.38vw); width: 120px;">
+                        
+                    </div>
+                    <div class="logo-text" style="color: #4da8d6;">
+                        <h3 class="mt-5 ms-4 fw-bold display-6">Return Fee</h3>
+                        <h3 class="fs-4 ms-3 fw-bold">£10.00</h3>
+                    </div>
+                </div>
+                <div class="secured-text px-5 mt-5 pb-5" style="border-bottom: 7px solid #4da8d6; border-radius: 5px;">
+                    <p class="" style="font-size: 15px;">You can unsubscribe at any time. SellMyMobile.com will
+                        process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+                </div>
+                <!-- ---no obligation-- -->
+                <div class="secured">
+                    <div class="logo mt-4">
+                        <img src="./images/No-oblg.png" alt="" width="300px" style="margin-left: min(110px, 7.64vw);">
+                    </div>
+                    <div class="logo-text">
+                        <h5 class="fw-bold" style="color: orange; margin-left: min(160px, 11.11vw);">To Sell Your Device</h5>
+                    </div>
+                </div>
+                <div class="secured-text px-5 mt-5 pb-5" style="border-bottom: 7px solid orange; border-radius: 5px;">
+                    <p class="" style="font-size: 15px;">You can unsubscribe at any time. SellMyMobile.com will
+                        process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+                </div>
+                <!-- ---trusted seller-- -->
+                <div class="secured d-flex">
+                    <div class="logo mt-5" style="margin-left: 90px;">
+                        <img src="./images/Mask group.png">
+                    </div>
+                    <div class="logo-text mt-4">
+                        <h3 class=" mt-5 ms-3 fw-bold display-6" style="color: #4da8d6;">Trusted Seller</h3>
+                    </div>
+                </div>
+                <div class="secured-text px-5 mt-5 pb-5" style="border-bottom: 7px solid orange; border-radius: 5px;">
+                    <p class="" style="font-size: 15px;">You can unsubscribe at any time. SellMyMobile.com will
+                        process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+                </div>
+                <!-- ----fonebucks---- -->
+                <div class="secured mt-5">
+                    <div class="logo mt-4">
+                        <img src="./images/deer.png" alt="" width="380px" style="margin-left: 60px;">
+                    </div>
+                </div>
+                <div class="secured-text px-5 mt-3 ">
+                    <p class="" style="font-size: 15px;">You can unsubscribe at any time. SellMyMobile.com will
+                        process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- ------postage method---- -->
+    <div class="container-fluid" style="margin-top: -1480px;">
+        <div class="row">
+            <div class="col-lg-7 ms-5" style="background-color: rgb(255, 232, 215);   border-radius: 15px;">
+                <h3 class="fw-bold mt-4 ms-4">Postage Methods</h3>
+                <p class="fw-bold ms-5">Select an option</p>
+                <!-- ----check-boxs--- -->
+                <div class="free-sales d-flex ms-5">
+                    <p>
+                        <label class="custom-checkbox">
+                            <input name="dummy" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                    <h6>Free Sales Pack</h6>
+                </div>
+
+                <div class="free-sales d-flex ms-5">
+                    <p>
+                        <label class="custom-checkbox">
+                            <input name="dummy" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                    <h6>Print free Label</h6>
+                </div>
+
+                <div class="free-sales d-flex ms-5">
+                    <p>
+                        <label class="custom-checkbox">
+                            <input name="dummy" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                    <h6>Courier Collection</h6>
+                </div>
+
+                <div class="proceed-nxt mb-4">
+                    <button type="button" class="btn p-2 fs-6 fw-bold"
+                        style="background-color: orange; margin-left: min(650px, 45.14vw);">Proceed Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----payment-method--- -->
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-lg-7 ms-5 pb-4" style="background-color: rgb(255, 232, 215);   border-radius: 15px;">
+                <h3 class="fw-bold mt-4 ms-4">Payment Methods</h3>
+                <p class="fw-bold ms-5">Select an option</p>
+
+                <div class="custom-chk d-flex mt-5">
+                    <div class="chk-box">
+                        <p>
+                            <label class="custom-checkbox  ms-5">
+                                <input name="dummy" type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="bank-trans">
+                        <h5>Bank transfer</h5>
+                    </div>
+                </div>
+                <div class="strt-code d-flex justify-content-evenly ms-4">
+                    <div class="code ms-5">
+                        <p>Account holder name(optional)</p>
+                        <input type="text" placeholder="e.g.;  Jhon Doe" name="text" class="input">
+
+                    </div>
+                    <div class="acc-no ms-3">
+                        <p>Phone Number</p>
+                        <input type="text" placeholder="Phone No." name="text" class="input">
+
+                    </div>
+                </div>
+                <div class="strt-code d-flex justify-content-evenly ms-4 mt-3">
+                    <div class="code ms-5 mt-3">
+                        <p>Sort Code</p>
+                        <input type="text" placeholder="e.g;  00-11-22" name="text" class="input">
+
+                    </div>
+                    <div class="acc-no ms-3 mt-3">
+                        <p>Account Number</p>
+                        <input type="text" placeholder="e.g;  0123456" name="text" class="input">
+
+                    </div>
+                </div>
+
+                <div class="custom-chk d-flex mt-4">
+                    <div class="chk-box">
+                        <p>
+                            <label class="custom-checkbox ms-5 mt-4">
+                                <input name="dummy" type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="bank-trans d-flex">
+                        <div class="paypal mt-4">
+                            <h5>PayPal</h5>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="strt-code d-flex justify-content-evenly ms-4">
+                    <div class="code ms-5">
+                        <p>Email Adress</p>
+                        <input type="text" placeholder="user@gmail.com" name="text" class="input">
+
+                    </div>
+                    <div class="acc-no ms-3">
+                        <p>Phone Number</p>
+                        <input type="text" placeholder="Phone No." name="text" class="input">
+
+                    </div>
+                </div>
+
+                <div class="custom-chk d-flex mt-4">
+                    <div class="chk-box mt-4">
+                        <p>
+                            <label class="custom-checkbox ms-5">
+                                <input name="dummy" type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="bank-trans mt-4">
+                        <h5>Cheque</h5>
+                    </div>
+                </div>
+
+                <div class="strt-code d-flex justify-content-evenly ms-4">
+                    <div class="code ms-5">
+                        <p>Payee Name</p>
+                        <input type="text" placeholder="user@gmail.com" name="text" class="input">
+
+                    </div>
+                    <div class="acc-no ms-3">
+                        <p>Account Number</p>
+                        <input type="text" placeholder="Account No." name="text" class="input">
+
+                    </div>
+                </div>
+
+                <div class="add-dtls mt-5">
+                    <button type="button" class="btn p-2 fs-6 fw-bold"
+                        style="background-color: orange; margin-left: min(650px, 45.14vw);">Add Details</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-lg-7 ms-5 pb-4" style="background-color: rgb(255, 232, 215);   border-radius: 15px;">
+                <h3 class="fw-bold mt-4 ms-4">Terms and Conditions</h3>
+                <div class="terms d-flex mt-4">
+                    <p>
+                        <label class="custom-checkbox ms-5">
+                            <input name="dummy" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                    <p class="fw-bold">Yes,I would also like to receive emails about products/promotions from
+                        you.
+                    </p>
+                </div>
+                <div class="unsubscribe ms-5">
+                    <p>You can unsubscribe at any time. Sellmymobile.com will process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+
+                    <p>You can unsubscribe at any time. Sellmymobile.com will process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+
+
+                    <p>You can unsubscribe at any time. Sellmymobile.com will process your data in accordance with
+                        it's <a href="#" class="text-dark">privacy policy</a>.</p>
+                </div>
+
+                <div class="add-dtls mt-4">
+                    <button type="button" class="btn p-2 fs-6 fw-bold"
+                        style="background-color: orange; margin-left: min(650px, 45.14vw);">Complete my Order</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ----footer---- -->
+    <div class="container-fluid px-5">
+        <footer class="  text-center text-lg-start text-dark"
+            style="background-color: #4da8d6; margin-top: 20px; border-radius: 25px;">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div class="me-4">
+                    <!-- Section: Social media -->
+                    <section class="me-4">
+                        <!-- Facebook -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                            role="button"><i class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
+                            role="button"><i class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                            role="button"><i class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                            role="button"><i class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"
+                            role="button"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!"
+                            role="button"><i class="fab fa-github"></i></a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+                <!-- Right -->
+
+            </section>
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <p class="fs-3 fw-bold text-dark mt-5">Compare <span class="fs-3" style="color: orange;">My
+                                    Gadget</span>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h5 class="text-uppercase fw-bold mb-4">
+                                Quick Links
+                            </h5>
+                            <p>
+                                <a href="#!" class="text-reset">About our company</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Services we provide</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Career & Opportunity</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Privacy and policy</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Contact Us</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h5 class="text-uppercase fw-bold mb-4">
+                                Company
+                            </h5>
+                            <p>
+                                <a href="#!" class="text-reset">About Company</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Our Testimonials</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Latest News</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Our Mission</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Get a free Quot</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h5 class="text-uppercase fw-bold mb-4">Contact- Us</h5>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> Sahiwal, Punjab, Pakistan</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="#">Mobile recycling.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+ 
+*body {
+    background-color: f1fbff;
+}
+
+
+.carousel-item h1 {
+    font-size: 100px;
+}
+
+.carousel-inner{
+    height: 580px;
+}
+
+.every{
+    margin-bottom: 580px;
+}
+
+.buy {
+    margin-bottom: 100px;
+}
+
+/* -====Slider====-- */
+
+
+
+/* !-====media-queries====-- */
+
+@media screen and (max-width:768px) {
+    .card-title {
+        text-align: center;
+    }
+
+    .baat {
+        text-align: center;
+        /* color: blueviolet; */
+
+    }
+/* 
+    .mapp {
+        color: rgb(226, 134, 43);
+    } */
+
+    .vidd iframe {
+        width: 380px;
+        /* border: 2px solid rgb(42, 136, 165); */
+    }
+
+    .health-heading {
+        text-align: center;
+        /* color: rgb(163, 61, 143); */
+    }
+
+    .health-text {
+        text-align: justify;
+    }
+
+    .carousel-inner{
+        height: 580px;
+    }
+    
+
+}
+
+
+@media screen and (max-width:991px) {
+    .head {
+        /* color: rgb(43, 226, 64); */
+        text-align: center;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .baat {
+        text-align: center;
+        /* color: blueviolet; */
+
+    }
+
+    /* .mapp {
+        color: rgb(226, 134, 43);
+    } */
+
+    .vidd iframe {
+        width: 300px;
+        /* margin-top: 150px; */
+        border: 2px solid rgb(197, 209, 138);
+    }
+
+    .health-heading {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .health-text {
+        text-align: justify;
+    }
+
+    .carousel-inner{
+        height: 580px;
+    }
+}
+
+
+
+@media screen and (max-width:1500px) {
+    .head {
+        text-align: center;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .baat {
+        text-align: center;
+        /* color: blueviolet; */
+
+    }
+
+    /* .mapp {
+        color: rgb(226, 134, 43);
+    } */
+
+    .vidd iframe {
+        width: 300px;
+        margin-top: 150px;
+        border: 2px solid rgb(197, 209, 138);
+    }
+/* 
+    .health-heading {
+        color: rgb(235, 20, 42);
+        font-size: 15px;
+    } */
+
+    .health-text {
+        text-align: justify;
+    }
+
+    .carousel-inner{
+        height: 380px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .head {
+        /* color: rgb(226, 180, 43); */
+        text-align: center;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .baat {
+        text-align: center;
+        /* color: blueviolet; */
+    }
+/* 
+    .mapp {
+        color: blueviolet;
+    } */
+
+    .crd {
+        margin-top: 10px;
+    }
+
+    .vidd iframe {
+        width: 300px;
+        margin-top: -1px;
+        margin-left: 25px;
+        border: 2px solid brown;
+    }
+
+    .health-heading {
+        text-align: center;
+        color: rgb(72, 72, 128);
+    }
+
+    .health-text {
+        text-align: justify;
+    }
+
+    .carousel-inner{
+        height: 200px;
+    }
+}

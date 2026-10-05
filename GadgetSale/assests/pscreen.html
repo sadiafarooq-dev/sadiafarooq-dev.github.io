@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare My Gadget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ----navbar---- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p class="fs-5 fw-bold text-dark">Compare <span class="text-warning fs-5">My
+                                    Gadget</span>
+                            </p>
+                        </a>
+                    </li>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" style="margin-left: min(210px, 14.58vw);">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="fs-5 fw-bold ">Home</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 40px;">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="fs-5 fw-bold">Best Price Guarantee</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 40px;">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="fs-5 fw-bold">Support</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 40px;">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <p class="fs-5 fw-bold">Sell My Device</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 40px;">
+                            <a class="nav-link" href="#">
+                                <button type="button" class="btn btn-primary rounded-pill">View Other
+                                    Gadgets</button>
+                                <p class="fs-5 fw-bold text-dark"></p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-5">
+        <div class="row p-3" style="
+              position: absolute;
+              top: 128px;
+              left: 750px;
+              background-color: #64c1ef;
+              border-radius: 10px;
+              border-bottom-left-radius: 80px 100px;
+            ">
+            <h1>Recommended offer</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3" style="margin-top: 130px">
+                <div class="pill">
+                    <input type="text" class="search-iput" placeholder="Search your device e.g. iPhone 14" />
+                    <button class="search-btn">
+                        Search <i class="fa-solid fa-magnifying-glass ms-3"></i>
+                    </button>
+                </div>
+                <a href="" class="text-dark" style="margin-left: min(125px, 8.68vw)">Browse other brands</a>
+            </div>
+            <div class="col-lg-9 col-md-6 d-flex justify-content-evenly p-5" style="
+                background-color: rgb(255, 232, 215);
+                border-radius: 25px;
+                margin-top: 100px;
+              ">
+                <div class="deer p-5" style="border-right: 5px solid orange">
+                    <img src="./images/deer.png" alt="" width="280px" height="100px" />
+                </div>
+                <div class="pound-100 p-5" style="border-right: 5px solid orange">
+                    <h1 class="fw-bold display-4">£100</h1>
+                </div>
+                <div class="sell now p-5">
+                    <a class="nav-link ps-5" href="#">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            Sell Now
+                        </button>
+                        <p class="fs-5 fw-bold text-dark"></p>
+                    </a>
+
+                    <div class="rating ms-5">
+                        <input value="5" name="rating" id="star5" type="radio" class="bg-success" />
+                        <label for="star5"></label>
+                        <input value="4" name="rating" id="star4" type="radio" />
+                        <label for="star4"></label>
+                        <input value="3" name="rating" id="star3" type="radio" />
+                        <label for="star3"></label>
+                        <input value="2" name="rating" id="star2" type="radio" />
+                        <label for="star2"></label>
+                        <input value="1" name="rating" id="star1" type="radio" />
+                        <label for="star1"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-5">
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center"
+                style="background-color: rgb(255, 232, 215);margin-top: 20px;border-radius: 25px; margin-top: -140px;">
+                <h3 class="text-center mt-3">Apple iPhone 14</h3>
+                <h3 class="text-center">Pro Max</h3>
+
+                <div class="sidenav" style="border-radius: 10px">
+                    <img src="./images/phone-imgs.avif" class="card-img-top mt-3" alt="..." />
+                    <h5 class="sidenav-head d-flex justify-content-evenly mt-3 fw-bold">
+                        <p>Condition</p>
+                        <p>Capacity</p>
+                    </h5>
+                    <div class="sidenav-body mt-3">
+                        <h3 class="d-flex justify-content-around">
+                            <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">
+                                Good
+                            </button>
+                            <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">
+                                64 GB
+                            </button>
+                        </h3>
+                        <p class="d-flex justify-content-around">
+                            <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">
+                                Good
+                            </button>
+                            <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">
+                                128 GB
+                            </button>
+                        </p>
+                        <p class="d-flex justify-content-around">
+                            <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">
+                                Good
+                            </button>
+                            <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">
+                                256 GB
+                            </button>
+                        </p>
+                        <p class="d-flex justify-content-around">
+                            <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">
+                                Good
+                            </button>
+                            <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">
+                                512 GB
+                            </button>
+                        </p>
+                        <!-- <p>Network</p> -->
+                        <p class="fw-bold text-center">Network</p>
+                        <div class="dropdown mb-4 text-center" style="border-radius: 20px;">
+                            <button class="btn btn-light btn-outline-warning dropdown-toggle rounded-pill" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                style="width: 110px;">
+                                Unlocked
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Action</a></li>
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Another action</a></li>
+                                <li><a class="dropdown-item rounded-pill text-warning" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-md-9 d-flex" style="
+                background-color: rgb(255, 232, 215);
+                border-radius: 25px;
+                margin-left: min(100px, 6.94vw);
+                margin-top: 25px;
+              ">
+                <div class="table-responsive"><table>
+                    <thead>
+                        <tr>
+                            <th>Recycler</th>
+                            <th>Price</th>
+                            <th>Freepost</th>
+                            <th>Payment Method</th>
+                            <th>Pay period</th>
+                            <th>Sell now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 180px">
+                                <img src="./images/bucks text.png" alt="" width="120px" />
+                            </td>
+                            <td style="width: 100px">$50</td>
+                            <td style="width: 100px"><i class="fa-solid fa-check"></i></td>
+                            <td style="width: 100px">
+                                <img src="./images/pay pal.png" style="width: 50px" />
+                            </td>
+                            <td>Someday</td>
+                            <td>
+                                <div class="sell now">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-primary rounded-pill">
+                                            Sell Now
+                                        </button>
+                                        <p class="fs-5 fw-bold text-dark"></p>
+                                    </a>
+
+                                    <div class="rating ms-5">
+                                        <input value="5" name="rating-2" id="star5-2" type="radio" class="bg-success" />
+                                        <label for="star5-2"></label>
+                                        <input value="4" name="rating-2" id="star4-2" type="radio" />
+                                        <label for="star4-2"></label>
+                                        <input value="3" name="rating-2" id="star3-2" type="radio" />
+                                        <label for="star3-2"></label>
+                                        <input value="2" name="rating-2" id="star2-2" type="radio" />
+                                        <label for="star2-2"></label>
+                                        <input value="1" name="rating-2" id="star1-2" type="radio" />
+                                        <label for="star1-2"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/bucks text.png" alt="" width="120px" />
+                            </td>
+                            <td>$50</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><img src="./images/pay pal.png" style="width: 50px" /></td>
+                            <td>Someday</td>
+                            <td>
+                                <div class="sell now">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-primary rounded-pill">
+                                            Sell Now
+                                        </button>
+                                        <p class="fs-5 fw-bold text-dark"></p>
+                                    </a>
+
+                                    <div class="rating ms-5">
+                                        <input value="5" name="rating-3" id="star5-3" type="radio" class="bg-success" />
+                                        <label for="star5-3"></label>
+                                        <input value="4" name="rating-3" id="star4-3" type="radio" />
+                                        <label for="star4-3"></label>
+                                        <input value="3" name="rating-3" id="star3-3" type="radio" />
+                                        <label for="star3-3"></label>
+                                        <input value="2" name="rating-3" id="star2-3" type="radio" />
+                                        <label for="star2-3"></label>
+                                        <input value="1" name="rating-3" id="star1-3" type="radio" />
+                                        <label for="star1-3"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/bucks text.png" alt="" width="120px" />
+                            </td>
+                            <td>$50</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><img src="./images/pay pal.png" style="width: 50px" /></td>
+                            <td>Someday</td>
+                            <td>
+                                <div class="sell now">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-primary rounded-pill">
+                                            Sell Now
+                                        </button>
+                                        <p class="fs-5 fw-bold text-dark"></p>
+                                    </a>
+
+                                    <div class="rating ms-5">
+                                        <input value="5" name="rating-4" id="star5-4" type="radio" class="bg-success" />
+                                        <label for="star5-4"></label>
+                                        <input value="4" name="rating-4" id="star4-4" type="radio" />
+                                        <label for="star4-4"></label>
+                                        <input value="3" name="rating-4" id="star3-4" type="radio" />
+                                        <label for="star3-4"></label>
+                                        <input value="2" name="rating-4" id="star2-4" type="radio" />
+                                        <label for="star2-4"></label>
+                                        <input value="1" name="rating-4" id="star1-4" type="radio" />
+                                        <label for="star1-4"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/bucks text.png" alt="" width="120px" />
+                            </td>
+                            <td>$50</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><img src="./images/pay pal.png" style="width: 50px" /></td>
+                            <td>Someday</td>
+                            <td>
+                                <div class="sell now">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-primary rounded-pill">
+                                            Sell Now
+                                        </button>
+                                        <p class="fs-5 fw-bold text-dark"></p>
+                                    </a>
+
+                                    <div class="rating ms-5">
+                                        <input value="5" name="rating-5" id="star5-5" type="radio" class="bg-success" />
+                                        <label for="star5-5"></label>
+                                        <input value="4" name="rating-5" id="star4-5" type="radio" />
+                                        <label for="star4-5"></label>
+                                        <input value="3" name="rating-5" id="star3-5" type="radio" />
+                                        <label for="star3-5"></label>
+                                        <input value="2" name="rating-5" id="star2-5" type="radio" />
+                                        <label for="star2-5"></label>
+                                        <input value="1" name="rating-5" id="star1-5" type="radio" />
+                                        <label for="star1-5"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/bucks text.png" alt="" width="120px" />
+                            </td>
+                            <td>$50</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><img src="./images/pay pal.png" style="width: 50px" /></td>
+                            <td>Someday</td>
+                            <td>
+                                <div class="sell now">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-primary rounded-pill">
+                                            Sell Now
+                                        </button>
+                                        <p class="fs-5 fw-bold text-dark"></p>
+                                    </a>
+
+                                    <div class="rating ms-5">
+                                        <input value="5" name="rating-6" id="star5-6" type="radio" class="bg-success" />
+                                        <label for="star5-6"></label>
+                                        <input value="4" name="rating-6" id="star4-6" type="radio" />
+                                        <label for="star4-6"></label>
+                                        <input value="3" name="rating-6" id="star3-6" type="radio" />
+                                        <label for="star3-6"></label>
+                                        <input value="2" name="rating-6" id="star2-6" type="radio" />
+                                        <label for="star2-6"></label>
+                                        <input value="1" name="rating-6" id="star1-6" type="radio" />
+                                        <label for="star1-6"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/bucks text.png" alt="" width="120px" />
+                            </td>
+                            <td>$50</td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><img src="./images/pay pal.png" style="width: 50px" /></td>
+                            <td>Someday</td>
+                            <td>
+                                <div class="sell now">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-primary rounded-pill">
+                                            Sell Now
+                                        </button>
+                                        <p class="fs-5 fw-bold text-dark"></p>
+                                    </a>
+
+                                    <div class="rating ms-5">
+                                        <input value="5" name="rating-7" id="star5-7" type="radio" class="bg-success" />
+                                        <label for="star5-7"></label>
+                                        <input value="4" name="rating-7" id="star4-7" type="radio" />
+                                        <label for="star4-7"></label>
+                                        <input value="3" name="rating-7" id="star3-7" type="radio" />
+                                        <label for="star3-7"></label>
+                                        <input value="2" name="rating-7" id="star2-7" type="radio" />
+                                        <label for="star2-7"></label>
+                                        <input value="1" name="rating-7" id="star1-7" type="radio" />
+                                        <label for="star1-7"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------Roadmap---- -->
+
+    <div class="container-fluid" style="background-color: rgb(255, 232, 215); border-radius: 25px;">
+
+        <div class="row">
+            <div class="col-lg-2 col-md-12 mt-4">
+                <h2 class="fw-bold p-3" style="margin-left: min(455px, 31.6vw); border-left: 7px solid orange">
+                    Recycling Roadmap
+                </h2>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
