@@ -10,14 +10,16 @@ links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     toggle.setAttribute('aria-expanded', false);
 }));
 
-// Featured project gallery
-const main = document.getElementById('featured-main');
-document.querySelectorAll('.thumb').forEach(btn => {
-    btn.addEventListener('click', () => {
-        document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
-        btn.classList.add('active');
-        main.src = btn.dataset.src;
-        main.alt = btn.dataset.alt;
+// Featured project galleries (each gallery switches its own main image)
+document.querySelectorAll('.gallery').forEach(gallery => {
+    const main = gallery.querySelector('.gallery-main');
+    gallery.querySelectorAll('.thumb').forEach(btn => {
+        btn.addEventListener('click', () => {
+            gallery.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+            main.src = btn.dataset.src;
+            main.alt = btn.dataset.alt;
+        });
     });
 });
 
